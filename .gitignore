@@ -15,4 +15,3 @@ __pycache__
 .idea/
 .vscode/
 node_modules/
-erpnext/templates/includes/footer/footer_powered.html
