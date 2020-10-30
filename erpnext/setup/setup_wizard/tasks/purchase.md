@@ -1,4 +1,4 @@
-How to manage your purchasing in onehash 🛒🛒🛒:
+How to manage your purchasing in OneHash 🛒🛒🛒:
 
 1. Add a few **Suppliers**
 2. Find out what you need by making **Material Requests**.

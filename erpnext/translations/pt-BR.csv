@@ -677,7 +677,7 @@ DocType: SMS Center,All Lead (Open),Todos os Clientes em Potencial em Aberto
 apps/erpnext/erpnext/stock/doctype/stock_entry/stock_entry.py +352,Row {0}: Qty not available for {4} in warehouse {1} at posting time of the entry ({2} {3}),Linha {0}: Qtde não disponível do item {4} no armazén {1} no horário do lançamento ({2} {3})
 DocType: Purchase Invoice,Get Advances Paid,Obter adiantamentos pagos
 DocType: Journal Entry,Total Amount in Words,Valor total por extenso
-apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists.,Houve um erro. Uma razão provável pode ser que você não tenha salvo o formulário. Entre em contato com support@erpnext.com se o problema persistir.
+apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@onehash.ai if the problem persists.,Houve um erro. Uma razão provável pode ser que você não tenha salvo o formulário. Entre em contato com support@onehash.ai se o problema persistir.
 apps/erpnext/erpnext/templates/pages/cart.html +5,My Cart,Meu carrinho
 apps/erpnext/erpnext/controllers/selling_controller.py +142,Order Type must be one of {0},Tipo de Ordem deve ser uma das {0}
 DocType: Lead,Next Contact Date,Data do Próximo Contato

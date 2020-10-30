@@ -90,7 +90,7 @@ def _send_gstin_reminder(party_type, party, default_email_id=None, sent_to=None)
 		<p style="color: #aaa; font-size: 11px; margin-top: 30px;">
 			Get your GST Ready ERP system at <a href="https://onehash.ai">https://onehash.ai</a>
 			<br>
-			onehash is a free and open source ERP system.
+			OneHash is a ERP system.
 		</p>
 		'''.format(os.path.join(get_url(), '/regional/india/update-gstin'), party)
 	)

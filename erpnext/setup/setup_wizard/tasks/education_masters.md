@@ -1,4 +1,4 @@
-Lets start making things in onehash that are representative of your institution.
+Lets start making things in OneHash that are representative of your institution.
 
 1. Make a list of **Programs** that you offer
 1. Add a few **Courses** that your programs cover
@@ -6,5 +6,5 @@ Lets start making things in onehash that are representative of your institution.
 1. Start adding **Students**
 1. Group your students into **Batches**
 
-Follow link to learn more about onehash Education:
+Follow link to learn more about OneHash Education:
 https://help.onehash.ai

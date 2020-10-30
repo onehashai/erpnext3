@@ -12,7 +12,7 @@ from frappe.custom.doctype.custom_field.custom_field import create_custom_field
 from erpnext.setup.default_energy_point_rules import get_default_energy_point_rules
 
 default_mail_footer = """<div style="padding: 7px; text-align: right; color: #888"><small>Sent via
-	<a style="color: #888" href="http://onehash.ai">onehash</a></div>"""
+	<a style="color: #888" href="http://onehash.ai">OneHash</a></div>"""
 
 
 def after_install():
@@ -31,7 +31,7 @@ def after_install():
 def check_setup_wizard_not_completed():
 	if frappe.db.get_default('desktop:home_page') == 'desktop':
 		print()
-		print("onehash can only be installed on a fresh site where the setup wizard is not completed")
+		print("OneHash can only be installed on a fresh site where the setup wizard is not completed")
 		print("You can reinstall this site (after saving your data) using: bench --site [sitename] reinstall")
 		print()
 		return False

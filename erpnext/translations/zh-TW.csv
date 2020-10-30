@@ -1458,7 +1458,7 @@ DocType: Item,Automatically Create New Batch,自動創建新批
 DocType: Student Admission,Admission Start Date,入學開始日期
 DocType: Journal Entry,Total Amount in Words,總金額大寫
 apps/erpnext/erpnext/hr/doctype/employee/employee_tree.js +29,New Employee,新員工
-apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists.,有一個錯誤。一個可能的原因可能是因為您沒有保存的形式。請聯繫support@erpnext.com如果問題仍然存在。
+apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@onehash.ai if the problem persists.,有一個錯誤。一個可能的原因可能是因為您沒有保存的形式。請聯繫support@erpnext.com如果問題仍然存在。
 apps/erpnext/erpnext/templates/pages/cart.html +5,My Cart,我的購物車
 apps/erpnext/erpnext/controllers/selling_controller.py +142,Order Type must be one of {0},訂單類型必須是一個{0}
 DocType: Lead,Next Contact Date,下次聯絡日期

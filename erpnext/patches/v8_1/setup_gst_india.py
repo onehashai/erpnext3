@@ -34,20 +34,20 @@ def delete_custom_field_tax_id_if_exists():
 def send_gst_update_email():
 	message = """Hello,
 
-<p>onehash is now GST Ready!</p>
+<p>OneHash is now GST Ready!</p>
 
 <p>To start making GST Invoices from 1st of July, you just need to create new Tax Accounts,
 Templates and update your Customer's and Supplier's GST Numbers.</p>
 
-<p>Please refer {gst_document_link} to know more about how to setup and implement GST in onehash.</p>
+<p>Please refer {gst_document_link} to know more about how to setup and implement GST in OneHash.</p>
 
-<p>Please contact us at support@erpnext.com, if you have any questions.</p>
+<p>Please contact us at support@onehash.ai, if you have any questions.</p>
 
 <p>Thanks,</p>
-onehash Team.
-	""".format(gst_document_link="<a href='http://help.onehash.ai'> onehash GST Document </a>")
+OneHash Team.
+	""".format(gst_document_link="<a href='http://help.OneHash.ai'> OneHash GST Document </a>")
 
 	try:
-		sendmail_to_system_managers("[Important] onehash GST updates", message)
+		sendmail_to_system_managers("[Important] OneHash GST updates", message)
 	except Exception as e:
 		pass

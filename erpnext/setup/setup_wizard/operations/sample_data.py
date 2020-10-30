@@ -90,12 +90,12 @@ def make_projects(domains):
 	current_date = frappe.utils.nowdate()
 	project = frappe.get_doc({
 		"doctype": "Project",
-		"project_name": "onehash Implementation",
+		"project_name": "OneHash Implementation",
 	})
 
 	tasks = [
 		{
-			"title": "Explore onehash",
+			"title": "Explore OneHash",
 			"start_date": current_date,
 			"end_date": current_date,
 			"file": "explore.md"
@@ -104,7 +104,7 @@ def make_projects(domains):
 	if 'Education' in domains:
 		tasks += [
 			{
-				"title": _("Setup your Institute in onehash"),
+				"title": _("Setup your Institute in OneHash"),
 				"start_date": current_date,
 				"end_date": frappe.utils.add_days(current_date, 1),
 				"file": "education_masters.md"

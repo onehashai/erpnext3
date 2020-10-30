@@ -1,4 +1,4 @@
-Ready to go live with onehash? 🏁🏁🏁
+Ready to go live with OneHash? 🏁🏁🏁
 
 Here are the steps:
 

@@ -1,4 +1,4 @@
-Start building a model of your business in onehash by adding your Items and Customers.
+Start building a model of your business in OneHash by adding your Items and Customers.
 
 These links will help you get started:
 

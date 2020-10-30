@@ -5,7 +5,7 @@ frappe.provide('erpnext');
 
 // add toolbar icon
 $(document).bind('toolbar_setup', function() {
-	frappe.app.name = "onehash";
+	frappe.app.name = "OneHash";
 
 	frappe.help_feedback_link = '<p><a class="text-muted" \
 		href="https://onehash.ai">Feedback</a></p>'
@@ -54,7 +54,7 @@ $.extend(frappe.breadcrumbs.preferred, {
 });
 
 $.extend(frappe.breadcrumbs.module_map, {
-	'onehash Integrations': 'Integrations',
+	'OneHash Integrations': 'Integrations',
 	'Geo': 'Settings',
 	'Accounts': 'Accounting',
 	'Portal': 'Website',

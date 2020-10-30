@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# ERPNext - web based ERP (http://erpnext.com)
+# ERPNext - web based ERP (http://onehash.ai)
 # Copyright (C) 2012 Frappe Technologies Pvt Ltd
 #
 # This program is free software: you can redistribute it and/or modify

@@ -1,4 +1,4 @@
-Start managing your sales with onehash 🔔🔔🔔:
+Start managing your sales with OneHash 🔔🔔🔔:
 
 1. Add potential business contacts as **Leads**
 2. Udpate your deals in pipeline in **Opportunities**

@@ -2,14 +2,14 @@ from __future__ import unicode_literals
 from frappe import _
 
 app_name = "erpnext"
-app_title = "onehash"
+app_title = "OneHash"
 app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = """ERP made simple"""
 app_icon = "fa fa-th"
 app_color = "#e74c3c"
 app_email = "support@onehash.ai"
 app_license = "GNU General Public License (v3)"
-source_link = "https://github.com/capvia/onehash"
+#source_link = "https://github.com/capvia/onehash"
 app_logo_url = '/assets/erpnext/images/erp-icon.svg'
 
 
@@ -324,7 +324,7 @@ default_mail_footer = """
 	<span>
 		Sent via
 		<a class="text-muted" href="https://onehash.ai?source=via_email_footer" target="_blank">
-			onehash
+			OneHash
 		</a>
 	</span>
 """
