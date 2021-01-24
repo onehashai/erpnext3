@@ -98,7 +98,7 @@ def create_sales_order(shopify_order, shopify_settings, company=None):
 			message = 'Following items are exists in order but relevant record not found in Product master'
 			message += "\n" + ", ".join(product_not_exists)
 
-			make_shopify_log(status="Error", exception=e, rollback=True)
+			make_shopify_log(status="Error", exception=message, rollback=True)
 
 			return ''
 
