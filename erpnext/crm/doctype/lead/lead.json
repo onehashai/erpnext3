@@ -366,8 +366,8 @@
  "icon": "fa fa-user",
  "idx": 5,
  "image_field": "image",
- "modified": "2020-04-28 17:41:56.397963",
- "modified_by": "Administrator",
+ "modified": "2021-02-18 00:52:46.111680",
+ "modified_by": "skr842004@gmail.com",
  "module": "CRM",
  "name": "Lead",
  "name_case": "Title Case",
@@ -438,5 +438,6 @@
  "show_name_in_global_search": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "lead_name"
+ "title_field": "lead_name",
+ "track_seen": 1
 }
