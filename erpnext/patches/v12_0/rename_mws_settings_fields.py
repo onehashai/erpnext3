@@ -8,4 +8,4 @@ def execute():
 	if count == 0:
 		frappe.db.sql("UPDATE `tabSingles` SET field='enable_sync' WHERE doctype='Amazon MWS Settings' AND field='enable_synch';")
 
-	frappe.reload_doc("ERPNext Integrations", "doctype", "Amazon MWS Settings")
+	frappe.reload_doc("OneHash Integrations", "doctype", "Amazon MWS Settings")
