@@ -2,15 +2,15 @@ from __future__ import unicode_literals
 from frappe import _
 
 app_name = "erpnext"
-app_title = "ERPNext"
+app_title = "OneHash"
 app_publisher = "Frappe Technologies Pvt. Ltd."
 app_description = """ERP made simple"""
 app_icon = "fa fa-th"
 app_color = "#e74c3c"
-app_email = "info@erpnext.com"
+app_email = "support@onehash.ai"
 app_license = "GNU General Public License (v3)"
 source_link = "https://github.com/frappe/erpnext"
-app_logo_url = "/assets/erpnext/images/erpnext-logo.svg"
+app_logo_url = "/assets/erpnext/images/erp-icon.svg"
 
 
 develop_version = '13.x.x-develop'
@@ -78,8 +78,8 @@ website_generators = ["Item Group", "Item", "BOM", "Sales Partner",
 	"Job Opening", "Student Admission"]
 
 website_context = {
-	"favicon": 	"/assets/erpnext/images/erpnext-favicon.svg",
-	"splash_image": "/assets/erpnext/images/erpnext-logo.svg"
+	"favicon": 	"/assets/erpnext/images/erp-icon.svg",
+	"splash_image": "/assets/erpnext/images/erp-icon.svg"
 }
 
 website_route_rules = [
