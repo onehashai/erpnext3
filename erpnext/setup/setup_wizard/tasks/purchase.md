@@ -1,4 +1,4 @@
-How to manage your purchasing in ERPNext 🛒🛒🛒:
+How to manage your purchasing in OneHash 🛒🛒🛒:
 
 1. Add a few **Suppliers**
 2. Find out what you need by making **Material Requests**.

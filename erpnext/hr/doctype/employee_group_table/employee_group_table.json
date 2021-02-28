@@ -27,7 +27,7 @@
    "fetch_from": "employee.user_id",
    "fieldname": "user_id",
    "fieldtype": "Data",
-   "label": "ERPNext User ID",
+   "label": "OneHash User ID",
    "read_only": 1
   }
  ],

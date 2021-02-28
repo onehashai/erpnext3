@@ -20,7 +20,7 @@
 from __future__ import unicode_literals
 
 
-product_name = "ERPNext"
+product_name = "OneHash"
 user_defaults = {
 	"Company": "company",
 	"Territory": "territory"

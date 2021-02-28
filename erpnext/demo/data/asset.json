@@ -32,7 +32,7 @@
 		"location": "Fletcher Location"
 	},
 	{
-		"asset_name": "ERPNext",
+		"asset_name": "OneHash",
 		"item_code": "ERP",
 		"gross_purchase_amount": 100000,
 		"asset_owner": "Company",

@@ -21,11 +21,11 @@ frappe.tour['Selling Settings'] = [
 	{
 		fieldname: "so_required",
 		title: "Sales Order Required for Sales Invoice & Delivery Note Creation",
-		description: __("If this option is configured 'Yes', ERPNext will prevent you from creating a Sales Invoice or Delivery Note without creating a Sales Order first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Sales Order' checkbox in the Customer master.")
+		description: __("If this option is configured 'Yes', OneHash will prevent you from creating a Sales Invoice or Delivery Note without creating a Sales Order first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Sales Order' checkbox in the Customer master.")
 	},
 	{
 		fieldname: "dn_required",
 		title: "Delivery Note Required for Sales Invoice Creation",
-		description: __("If this option is configured 'Yes', ERPNext will prevent you from creating a Sales Invoice without creating a Delivery Note first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Delivery Note' checkbox in the Customer master.")
+		description: __("If this option is configured 'Yes', OneHash will prevent you from creating a Sales Invoice without creating a Delivery Note first. This configuration can be overridden for a particular Customer by enabling the 'Allow Sales Invoice Creation Without Delivery Note' checkbox in the Customer master.")
 	}
 ];

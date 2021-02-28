@@ -585,7 +585,7 @@ class GSPConnector():
 					self.set_einvoice_data(irn_details)
 				else:
 					raise RequestFailed('IRN has already been generated for the invoice but cannot fetch details for the it. \
-						Contact ERPNext support to resolve the issue.')
+						Contact OneHash support to resolve the issue.')
 
 			else:
 				raise RequestFailed

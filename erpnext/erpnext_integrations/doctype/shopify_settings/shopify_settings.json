@@ -202,7 +202,7 @@
    "default": "0",
    "fieldname": "update_price_in_erpnext_price_list",
    "fieldtype": "Check",
-   "label": "Update Price from Shopify To ERPNext Price List"
+   "label": "Update Price from Shopify To OneHash Price List"
   },
   {
    "fieldname": "column_break_26",
@@ -259,7 +259,7 @@
   {
    "fieldname": "html_16",
    "fieldtype": "HTML",
-   "options": "Map Shopify Taxes / Shipping Charges to ERPNext Account"
+   "options": "Map Shopify Taxes / Shipping Charges to OneHash Account"
   },
   {
    "fieldname": "taxes",
