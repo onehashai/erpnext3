@@ -95,10 +95,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "description": "Your Company set in ERPNext",
+   "description": "Your Company set in OneHash",
    "fieldname": "erpnext_company",
    "fieldtype": "Data",
-   "label": "ERPNext Company",
+   "label": "OneHash Company",
    "read_only_depends_on": "eval:doc.is_master_data_processed==1"
   },
   {

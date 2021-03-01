@@ -16,9 +16,9 @@ with open('erpnext/__init__.py', 'rb') as f:
 setup(
 	name='erpnext',
 	version=version,
-	description='Open Source ERP',
+	description='All In One ERP',
 	author='Frappe Technologies',
-	author_email='info@erpnext.com',
+	author_email='support@onehash.ai',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,

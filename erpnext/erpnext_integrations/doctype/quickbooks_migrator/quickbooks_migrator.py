@@ -75,7 +75,7 @@ class QuickBooksMigrator(Document):
 			# Their GL entries need to be generated from GeneralLedger Report.
 			self._fetch_general_ledger()
 
-			# QuickBooks data can have transactions that do not fall in existing fiscal years in ERPNext
+			# QuickBooks data can have transactions that do not fall in existing fiscal years in OneHash
 			self._create_fiscal_years()
 
 			self._allow_fraction_in_unit()
@@ -400,7 +400,7 @@ class QuickBooksMigrator(Document):
 			"Income": "Income",
 			"Other Income": "Income",
 		}
-		# Map Quickbooks Account Types to ERPNext root_accunts and and root_type
+		# Map Quickbooks Account Types to OneHash root_accunts and and root_type
 		try:
 			if not frappe.db.exists({"doctype": "Account", "quickbooks_id": account["Id"], "company": self.company}):
 				is_child = account["SubAccount"]

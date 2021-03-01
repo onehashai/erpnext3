@@ -50,7 +50,7 @@ frappe.ui.form.on("Membership Settings", {
 
 		let docs_url = "https://docs.erpnext.com/docs/user/manual/en/non_profit/membership";
 
-		frm.set_intro(__("You can learn more about memberships in the manual. ") + `<a href='${docs_url}'>${__('ERPNext Docs')}</a>`, true);
+		frm.set_intro(__("You can learn more about memberships in the manual. ") + `<a href='${docs_url}'>${__('OneHash Docs')}</a>`, true);
 
 		frm.trigger("add_generate_button");
 		frm.trigger("add_copy_buttonn");
