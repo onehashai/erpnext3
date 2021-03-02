@@ -129,7 +129,7 @@ class User(Document):
 
 	def check_demo(self):
 		if frappe.session.user == 'demo@onehash.ai':
-			frappe.throw(_('Cannot change user details in demo. Please signup for a new account at https://erpnext.com'), title=_('Not Allowed'))
+			frappe.throw(_('Cannot change user details in demo. Please signup for a new account at https://onehash.ai'), title=_('Not Allowed'))
 
 	def set_full_name(self):
 		self.full_name = " ".join(filter(None, [self.first_name, self.last_name]))

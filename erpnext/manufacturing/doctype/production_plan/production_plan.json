@@ -211,7 +211,7 @@
   },
   {
    "default": "0",
-   "description": "To know more about projected quantity, <a href=\"https://erpnext.com/docs/user/manual/en/stock/projected-quantity\" style=\"text-decoration: underline;\" target=\"_blank\">click here</a>.",
+   "description": "To know more about projected quantity, <a href=\"https://help.onehash.ai/en/article/projected-quantity-fek1le\" style=\"text-decoration: underline;\" target=\"_blank\">click here</a>.",
    "fieldname": "ignore_existing_ordered_qty",
    "fieldtype": "Check",
    "label": "Ignore Existing Projected Quantity"

@@ -431,7 +431,7 @@ user_privacy_documents = [
 	}
 ]
 
-# ERPNext doctypes for Global Search
+# OneHash doctypes for Global Search
 global_search_doctypes = {
 	"Default": [
 		{"doctype": "Customer", "index": 0},

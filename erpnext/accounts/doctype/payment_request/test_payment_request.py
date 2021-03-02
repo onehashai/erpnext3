@@ -45,7 +45,7 @@ class TestPaymentRequest(unittest.TestCase):
 
 	def test_payment_request_linkings(self):
 		so_inr = make_sales_order(currency="INR")
-		pr = make_payment_request(dt="Sales Order", dn=so_inr.name, recipient_id="saurabh@erpnext.com",
+		pr = make_payment_request(dt="Sales Order", dn=so_inr.name, recipient_id="saurabh@onehash.ai",
 			payment_gateway_account="_Test Gateway - INR")
 
 		self.assertEqual(pr.reference_doctype, "Sales Order")
@@ -55,7 +55,7 @@ class TestPaymentRequest(unittest.TestCase):
 		conversion_rate = get_exchange_rate("USD", "INR")
 
 		si_usd = create_sales_invoice(currency="USD", conversion_rate=conversion_rate)
-		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@erpnext.com",
+		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@onehash.ai",
 			payment_gateway_account="_Test Gateway - USD")
 
 		self.assertEqual(pr.reference_doctype, "Sales Invoice")
@@ -69,7 +69,7 @@ class TestPaymentRequest(unittest.TestCase):
 		frappe.db.set_value("Company", "_Test Company", "cost_center", "_Test Cost Center - _TC")
 
 		so_inr = make_sales_order(currency="INR")
-		pr = make_payment_request(dt="Sales Order", dn=so_inr.name, recipient_id="saurabh@erpnext.com",
+		pr = make_payment_request(dt="Sales Order", dn=so_inr.name, recipient_id="saurabh@onehash.ai",
 			mute_email=1, payment_gateway_account="_Test Gateway - INR", submit_doc=1, return_doc=1)
 		pe = pr.set_as_paid()
 
@@ -80,7 +80,7 @@ class TestPaymentRequest(unittest.TestCase):
 		si_usd = create_sales_invoice(customer="_Test Customer USD", debit_to="_Test Receivable USD - _TC",
 			currency="USD", conversion_rate=50)
 
-		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@erpnext.com",
+		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@onehash.ai",
 			mute_email=1, payment_gateway_account="_Test Gateway - USD", submit_doc=1, return_doc=1)
 
 		pe = pr.set_as_paid()
@@ -107,7 +107,7 @@ class TestPaymentRequest(unittest.TestCase):
 		si_usd = create_sales_invoice(customer="_Test Customer USD", debit_to="_Test Receivable USD - _TC",
 			currency="USD", conversion_rate=50)
 
-		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@erpnext.com",
+		pr = make_payment_request(dt="Sales Invoice", dn=si_usd.name, recipient_id="saurabh@onehash.ai",
 			mute_email=1, payment_gateway_account="_Test Gateway - USD", submit_doc=1, return_doc=1)
 
 		pe = pr.create_payment_entry()
@@ -126,13 +126,13 @@ class TestPaymentRequest(unittest.TestCase):
 
 		# Payment Request amount = 200
 		pr1 = make_payment_request(dt="Sales Order", dn=so.name,
-			recipient_id="nabin@erpnext.com", return_doc=1)
+			recipient_id="nabin@onehash.ai", return_doc=1)
 		pr1.grand_total = 200
 		pr1.submit()
 
 		# Make a 2nd Payment Request
 		pr2 = make_payment_request(dt="Sales Order", dn=so.name,
-			recipient_id="nabin@erpnext.com", return_doc=1)
+			recipient_id="nabin@onehash.ai", return_doc=1)
 
 		self.assertEqual(pr2.grand_total, 800)
 

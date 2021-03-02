@@ -35,7 +35,7 @@ class TestBankTransaction(unittest.TestCase):
 		frappe.flags.test_bank_transactions_created = False
 		frappe.flags.test_payments_created = False
 
-	# This test checks if ERPNext is able to provide a linked payment for a bank transaction based on the amount of the bank transaction.
+	# This test checks if OneHash is able to provide a linked payment for a bank transaction based on the amount of the bank transaction.
 	def test_linked_payments(self):
 		bank_transaction = frappe.get_doc("Bank Transaction", dict(description="Re 95282925234 FE/000002917 AT171513000281183046 Conrad Electronic"))
 		linked_payments = get_linked_payments(bank_transaction.name)
