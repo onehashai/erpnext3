@@ -91,7 +91,7 @@ def create_sales_order(shopify_order, shopify_settings, company=None):
 	product_not_exists = []
 	customer = frappe.db.get_value("Customer", {"shopify_customer_id": shopify_order.get("customer", {}).get("id")}, "name")
 	so = frappe.db.get_value("Sales Order", {"shopify_order_id": shopify_order.get("id")}, "name")
-
+	billing_address,shipping_address = get_billing_shipping_address(shopify_order.get("billing_address",{}),shopify_order.get("shipping_address",{}),customer)
 	if not so:
 		items = get_order_items(shopify_order.get("line_items"), shopify_settings, getdate(shopify_order.get('created_at')))
 
@@ -116,8 +116,11 @@ def create_sales_order(shopify_order, shopify_settings, company=None):
 			"ignore_pricing_rule": 1,
 			"items": items,
 			"taxes": get_order_taxes(shopify_order, shopify_settings),
-			"apply_discount_on": "Grand Total",
+			"apply_discount_on": "Net Total",
 			"discount_amount": get_discounted_amount(shopify_order),
+			"shopify_note": shopify_order.get("note"),
+			"customer_address":billing_address,
+			"shipping_address_name":shipping_address
 		})
 
 		if company:
@@ -201,6 +204,9 @@ def get_discounted_amount(order):
 	discounted_amount = 0.0
 	for discount in order.get("discount_codes"):
 		discounted_amount += flt(discount.get("amount"))
+	
+	if (discounted_amount==0):
+		discounted_amount= flt(order.get("total_discounts"))
 	return discounted_amount
 
 def get_order_items(order_items, shopify_settings, delivery_date):
@@ -232,13 +238,55 @@ def get_order_items(order_items, shopify_settings, delivery_date):
 	return items
 
 def get_item_code(shopify_item):
-	item_code = frappe.db.get_value("Item", {"shopify_variant_id": shopify_item.get("variant_id")}, "item_code")
+	item_code = frappe.db.get_value("Item", {"item_code": shopify_item.get("sku")}, "item_code")
+	if not item_code:
+		item_code = frappe.db.get_value("Item", {"shopify_variant_id": shopify_item.get("variant_id")}, "item_code")
 	if not item_code:
 		item_code = frappe.db.get_value("Item", {"shopify_product_id": shopify_item.get("product_id")}, "item_code")
 	if not item_code:
 		item_code = frappe.db.get_value("Item", {"item_name": shopify_item.get("title")}, "item_code")
-
 	return item_code
+
+def get_billing_shipping_address(billing_address,shipping_address,customer):
+	shipping_address = get_order_address(shipping_address,customer,_("Shipping"))
+	billing_address = get_order_address(billing_address,customer,_("Billing"))
+	return billing_address,shipping_address
+
+def get_order_address(shopify_address,customer,address_type):
+	if(shopify_address.get("id")):
+		address = frappe.db.get_value("Address",{"shopify_address_id":shopify_address.get("id")},"name")
+	else:
+		address = frappe.db.get_value("Address",{"name":shopify_address.get("name")},"name")
+	if not address:
+		address = frappe.db.get_value("Address",{"name":shopify_address.get("name")+"-"+address_type},"name")
+	
+	if not address:
+		address = create_customer_address(shopify_address,customer)
+	return address
+			
+def create_customer_address(address,customer,address_type=_("Billing")):
+	try :
+		doc = frappe.get_doc({
+			"doctype": "Address",
+			"shopify_address_id": address.get("id"),
+			"address_title": address.get("name"),
+			"address_type": address_type,
+			"address_line1": address.get("address1") or "Address 1",
+			"address_line2": address.get("address2"),
+			"city": address.get("city") or "City",
+			"state": address.get("province"),
+			"pincode": address.get("zip"),
+			"country": address.get("country"),
+			"phone": address.get("phone"),
+			"links": [{
+				"link_doctype": "Customer",
+				"link_name": customer
+			}]
+		}).insert(ignore_mandatory=True,ignore_permissions=True)
+		return doc.name
+	except Exception as e:
+		raise e
+
 
 def get_order_taxes(shopify_order, shopify_settings):
 	taxes = []

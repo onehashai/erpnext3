@@ -123,7 +123,9 @@ def setup_custom_fields():
 			dict(fieldname='shopify_order_id', label='Shopify Order Id',
 				fieldtype='Data', insert_after='title', read_only=1, print_hide=1),
 			dict(fieldname='shopify_order_number', label='Shopify Order Number',
-				fieldtype='Data', insert_after='shopify_order_id', read_only=1, print_hide=1)
+				fieldtype='Data', insert_after='shopify_order_id', read_only=1, print_hide=1),
+			dict(fieldname='shopify_note', label='Shopify Note',
+				fieldtype='Small Text', insert_after='shopify_order_number', read_only=1, print_hide=1)
 		],
 		"Delivery Note":[
 			dict(fieldname='shopify_order_id', label='Shopify Order Id',
