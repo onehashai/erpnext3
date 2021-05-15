@@ -444,6 +444,16 @@
    "type": "Link"
   },
   {
+    "dependencies": "GL Entry",
+    "hidden": 0,
+    "is_query_report": 1,
+    "label": "UAE VAT 201",
+    "link_to": "UAE VAT 201",
+    "link_type": "Report",
+    "onboard": 0,
+    "type": "Link"
+   },
+  {
    "hidden": 0,
    "is_query_report": 0,
    "label": "Financial Statements",
@@ -1061,7 +1071,7 @@
    "type": "Link"
   }
  ],
- "modified": "2020-12-01 13:38:35.349024",
+ "modified": "2021-03-04 00:38:35.349024",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounting",
@@ -1071,7 +1081,7 @@
  "pin_to_top": 0,
  "shortcuts": [
   {
-   "label": "Chart Of Accounts",
+   "label": "Chart of Accounts",
    "link_to": "Account",
    "type": "DocType"
   },
