@@ -4276,7 +4276,7 @@ received from,отримано від,
 to,Для,
 Cards,Картки,
 Percentage,Відсоток,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Не вдалося встановити налаштування за замовчуванням для країни {0}. Звертайтеся до support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Не вдалося встановити налаштування за замовчуванням для країни {0}. Звертайтеся до support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Рядок № {0}: Пункт {1} не є серіалізованим / пакетним елементом. Він не може мати серійний номер / номер партії проти нього.,
 Please set {0},"Будь ласка, встановіть {0}",
 Please set {0},"Будь ласка, встановіть {0}",supplier

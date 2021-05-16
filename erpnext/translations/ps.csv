@@ -4276,7 +4276,7 @@ received from,ترلاسه له,
 to,ته,
 Cards,کارتونه,
 Percentage,سلنه,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,د هیواد {0} لپاره افتراضیو ترتیب کولو کې ناکام شو. مهرباني وکړئ له support@erpnext.com سره اړیکه ونیسئ,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,د هیواد {0} لپاره افتراضیو ترتیب کولو کې ناکام شو. مهرباني وکړئ له support@onehash.ai سره اړیکه ونیسئ,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,قطار # {0}: توکی {1} سریال شوی / بیچ شوی توکی نه دی. دا د دې پروړاندې سیریل نمبر / بیچ نمبر نلري.,
 Please set {0},لطفا جوړ {0},
 Please set {0},مهرباني وکړئ {0} وټاکئ,supplier

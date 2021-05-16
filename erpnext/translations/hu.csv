@@ -4276,7 +4276,7 @@ received from,feladó,
 to,Címzett,
 Cards,kártyák,
 Percentage,Százalék,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,"A (z) {0} ország alapértelmezésének beállítása nem sikerült. Kérjük, vegye fel a kapcsolatot a support@erpnext.com címen",
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,"A (z) {0} ország alapértelmezésének beállítása nem sikerült. Kérjük, vegye fel a kapcsolatot a support@onehash.ai címen",
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,{0} sor: A (z) {1} elem nem sorosított / csomagolt elem. Ezzel szemben nem lehet sorozatszám / tételszám.,
 Please set {0},"Kérjük, állítsa be {0}",
 Please set {0},"Kérjük, állítsa be a (z) {0} -ot",supplier

@@ -4276,7 +4276,7 @@ received from,دریافت شده از,
 to,برای,
 Cards,کارت,
 Percentage,در صد,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,تنظیم پیش فرض برای کشور {0 انجام نشد. لطفا با support@erpnext.com تماس بگیرید,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,تنظیم پیش فرض برای کشور {0 انجام نشد. لطفا با support@onehash.ai تماس بگیرید,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,ردیف شماره {0: مورد {1} یک مورد سریال / دسته دار نیست. این نمی تواند یک سریال شماره / دسته ای در برابر آن نداشته باشد.,
 Please set {0},لطفا {0},
 Please set {0},لطفا {0 set تعیین کنید,supplier

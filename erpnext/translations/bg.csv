@@ -4276,7 +4276,7 @@ received from,Получени от,
 to,Към,
 Cards,карти,
 Percentage,Процент,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,"Неуспешно настройване на настройките по подразбиране за държава {0}. Моля, свържете се с support@erpnext.com",
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,"Неуспешно настройване на настройките по подразбиране за държава {0}. Моля, свържете се с support@onehash.ai",
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Ред № {0}: Елемент {1} не е сериализиран / партиден елемент. Не може да има сериен номер / номер на партида срещу него.,
 Please set {0},"Моля, задайте {0}",
 Please set {0},"Моля, задайте {0}",supplier

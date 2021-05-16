@@ -4276,7 +4276,7 @@ received from,התקבל מ,
 to,ל,
 Cards,קלפים,
 Percentage,אֲחוּזִים,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,הגדרת ברירות המחדל של המדינה {0} נכשלה. אנא צרו קשר עם support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,הגדרת ברירות המחדל של המדינה {0} נכשלה. אנא צרו קשר עם support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,שורה מספר {0}: פריט {1} אינו פריט מסודר / אצווה. לא יכול להיות מספר סידורי / מספר לא נגדי.,
 Please set {0},אנא הגדר {0},
 Please set {0},הגדר את {0},supplier

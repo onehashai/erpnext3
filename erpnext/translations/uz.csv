@@ -4276,7 +4276,7 @@ received from,Qabul qilingan,
 to,To,
 Cards,Kartalar,
 Percentage,Foiz,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,{0} mamlakat uchun birlamchi sozlamalarni o&#39;rnatib bo&#39;lmadi. Iltimos support@erpnext.com bilan bog&#39;laning,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,{0} mamlakat uchun birlamchi sozlamalarni o&#39;rnatib bo&#39;lmadi. Iltimos support@onehash.ai bilan bog&#39;laning,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,# {0} qatori: {1} bandi Serial / O&#39;rnatilgan mahsulot emas. Bunga Serial Yo&#39;q / To&#39;plam yo&#39;q.,
 Please set {0},"Iltimos, {0}",
 Please set {0},"Iltimos, {0} ni o&#39;rnating.",supplier

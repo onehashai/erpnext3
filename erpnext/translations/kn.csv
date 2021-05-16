@@ -4276,7 +4276,7 @@ received from,ಸ್ವೀಕರಿಸಿದ,
 to,ಗೆ,
 Cards,ಕಾರ್ಡ್‌ಗಳು,
 Percentage,ಶೇಕಡಾವಾರು,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,ದೇಶ {0 for ಗಾಗಿ ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು support@erpnext.com ಅನ್ನು ಸಂಪರ್ಕಿಸಿ,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,ದೇಶ {0 for ಗಾಗಿ ಡೀಫಾಲ್ಟ್‌ಗಳನ್ನು ಹೊಂದಿಸಲು ವಿಫಲವಾಗಿದೆ. ದಯವಿಟ್ಟು support@onehash.ai ಅನ್ನು ಸಂಪರ್ಕಿಸಿ,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,ಸಾಲು # {0}: ಐಟಂ {1 Ser ಧಾರಾವಾಹಿ / ಬ್ಯಾಚ್ ಮಾಡಲಾದ ಐಟಂ ಅಲ್ಲ. ಅದರ ವಿರುದ್ಧ ಸರಣಿ ಸಂಖ್ಯೆ / ಬ್ಯಾಚ್ ಸಂಖ್ಯೆ ಇರಬಾರದು.,
 Please set {0},ಸೆಟ್ ದಯವಿಟ್ಟು {0},
 Please set {0},ದಯವಿಟ್ಟು {0 set ಹೊಂದಿಸಿ,supplier

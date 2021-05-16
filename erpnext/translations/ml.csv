@@ -4276,7 +4276,7 @@ received from,നിന്നു ലഭിച്ച,
 to,ചെയ്യാ,
 Cards,കാർഡുകൾ,
 Percentage,ശതമാനം,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,രാജ്യം {0 for നായി സ്ഥിരസ്ഥിതികൾ സജ്ജമാക്കുന്നതിൽ പരാജയപ്പെട്ടു. Support@erpnext.com- നെ ബന്ധപ്പെടുക,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,രാജ്യം {0 for നായി സ്ഥിരസ്ഥിതികൾ സജ്ജമാക്കുന്നതിൽ പരാജയപ്പെട്ടു. support@onehash.ai- നെ ബന്ധപ്പെടുക,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,വരി # {0}: ഇനം {1 Ser ഒരു സീരിയലൈസ്ഡ് / ബാച്ച് ചെയ്ത ഇനമല്ല. ഇതിന് എതിരെ ഒരു സീരിയൽ നമ്പർ / ബാച്ച് നമ്പർ ഉണ്ടാകരുത്.,
 Please set {0},{0} സജ്ജീകരിക്കുക,
 Please set {0},ദയവായി {0 set സജ്ജമാക്കുക,supplier

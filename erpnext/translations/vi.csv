@@ -4276,7 +4276,7 @@ received from,nhận được tư,
 to,đến,
 Cards,thẻ,
 Percentage,Tỷ lệ phần trăm,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Không thể thiết lập mặc định cho quốc gia {0}. Vui lòng liên hệ với support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Không thể thiết lập mặc định cho quốc gia {0}. Vui lòng liên hệ với support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Hàng # {0}: Mục {1} không phải là Mục nối tiếp / hàng loạt. Nó không thể có Số không / Batch No nối tiếp với nó.,
 Please set {0},Hãy đặt {0},
 Please set {0},Vui lòng đặt {0},supplier

@@ -4276,7 +4276,7 @@ received from,Добиени од,
 to,Да,
 Cards,Картички,
 Percentage,Процент,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Не успеа да постави стандардни стандарди за земјата {0. Ве молиме контактирајте го support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Не успеа да постави стандардни стандарди за земјата {0. Ве молиме контактирајте го support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Ред # {0}: Предметот {1} не е Серијализирана / Свиткана ставка. Не може да има сериски број / серија бр против тоа.,
 Please set {0},Ве молиме да се постави {0},
 Please set {0},Ве молиме поставете {0,supplier

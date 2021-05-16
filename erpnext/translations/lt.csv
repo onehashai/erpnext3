@@ -4276,7 +4276,7 @@ received from,gautas nuo,
 to,į,
 Cards,Kortelės,
 Percentage,Procentas,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Nepavyko nustatyti numatytųjų reikšmių {0} šaliai. Kreipkitės į support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Nepavyko nustatyti numatytųjų reikšmių {0} šaliai. Kreipkitės į support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,# 0 eilutė: {1} elementas nėra serijinis / paketinis elementas. Jis negali turėti serijos Nr. / Partijos Nr.,
 Please set {0},Prašome nustatyti {0},
 Please set {0},Prašome nustatyti {0},supplier

@@ -4276,7 +4276,7 @@ received from,مستلم من,
 to,إلى,
 Cards,بطاقات,
 Percentage,النسبة المئوية,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,فشل في إعداد الإعدادات الافتراضية للبلد {0}. يرجى الاتصال support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,فشل في إعداد الإعدادات الافتراضية للبلد {0}. يرجى الاتصال support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,الصف # {0}: العنصر {1} ليس عنصرًا تسلسليًا / مُجمَّع. لا يمكن أن يكون له رقم مسلسل / لا دفعة ضده.,
 Please set {0},الرجاء تعيين {0},
 Please set {0},الرجاء تعيين {0},supplier

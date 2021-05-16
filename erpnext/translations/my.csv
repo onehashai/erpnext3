@@ -4276,7 +4276,7 @@ received from,မှစ. ရရှိထားသည့်,
 to,သို့,
 Cards,ကတ်များ,
 Percentage,ရာခိုင်နှုန်း,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,နိုင်ငံ {0} အတွက်ပုံသေသတ်မှတ်ချက်များကိုမအောင်မြင်ပါ။ support@erpnext.com ကိုဆက်သွယ်ပါ,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,နိုင်ငံ {0} အတွက်ပုံသေသတ်မှတ်ချက်များကိုမအောင်မြင်ပါ။ support@onehash.ai ကိုဆက်သွယ်ပါ,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Row # {0}: item {1} ဟာ Serial / Batched Item မဟုတ်ပါဘူး။ ၎င်းတွင်၎င်းနှင့်ဆန့်ကျင်သော Serial No / Batch No မရှိပါ။,
 Please set {0},{0} set ကျေးဇူးပြု.,
 Please set {0},ကျေးဇူးပြုပြီး {0} သတ်မှတ်ပါ,supplier

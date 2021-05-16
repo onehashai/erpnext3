@@ -4276,7 +4276,7 @@ received from,Imepokea Kutoka,
 to,kwa,
 Cards,Kadi,
 Percentage,Asilimia,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Imeshindwa kuanzisha defaults kwa nchi {0}. Tafadhali wasiliana na support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Imeshindwa kuanzisha defaults kwa nchi {0}. Tafadhali wasiliana na support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Njia # {0}: Bidhaa {1} sio Sifa iliyokusanywa / iliyoshonwa. Haiwezi kuwa na No No / Batch No dhidi yake.,
 Please set {0},Tafadhali weka {0},
 Please set {0},Tafadhali weka {0},supplier

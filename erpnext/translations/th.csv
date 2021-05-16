@@ -4276,7 +4276,7 @@ received from,ที่ได้รับจาก,
 to,ไปยัง,
 Cards,การ์ด,
 Percentage,ร้อยละ,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,ไม่สามารถตั้งค่าเริ่มต้นสำหรับประเทศ {0} กรุณาติดต่อ support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,ไม่สามารถตั้งค่าเริ่มต้นสำหรับประเทศ {0} กรุณาติดต่อ support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,แถว # {0}: รายการ {1} ไม่ใช่รายการที่ทำเป็นอนุกรม / แบทช์ มันไม่สามารถมีหมายเลขไม่ / หมายเลขแบตช์กับมัน,
 Please set {0},กรุณาตั้ง {0},
 Please set {0},กรุณาตั้งค่า {0},supplier

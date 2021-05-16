@@ -4276,7 +4276,7 @@ received from,Λήψη από,
 to,Έως,
 Cards,Καρτέλλες,
 Percentage,Τοις εκατό,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Δεν ήταν δυνατή η ρύθμιση των προεπιλογών για τη χώρα {0}. Επικοινωνήστε με την υποστήριξη@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Δεν ήταν δυνατή η ρύθμιση των προεπιλογών για τη χώρα {0}. Επικοινωνήστε με την υποστήριξη@erpnext.com,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Σειρά # {0}: Το στοιχείο {1} δεν είναι στοιχείο Serialized / Batched. Δεν μπορεί να έχει αριθμό σειριακού αριθμού / παρτίδας ενάντια σε αυτό.,
 Please set {0},Παρακαλώ να ορίσετε {0},
 Please set {0},Ορίστε {0},supplier

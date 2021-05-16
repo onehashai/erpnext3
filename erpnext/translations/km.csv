@@ -4276,7 +4276,7 @@ received from,ទទួលបានពី,
 to,ដើម្បី,
 Cards,កាត។,
 Percentage,ចំនួនភាគរយ,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,បានបរាជ័យក្នុងការរៀបចំលំនាំដើមសម្រាប់ប្រទេស {0} ។ សូមទាក់ទង support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,បានបរាជ័យក្នុងការរៀបចំលំនាំដើមសម្រាប់ប្រទេស {0} ។ សូមទាក់ទង support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,ជួរទី # {០}៖ ធាតុ {១} មិនមែនជារបស់សៀរៀល / ជួរដែលត្រូវបានចាត់ជាថ្នាក់។ វាមិនអាចមានសៀរៀលលេខ / បាច់ទេប្រឆាំងនឹងវា។,
 Please set {0},សូមកំណត់ {0},
 Please set {0},សូមកំណត់ {0},supplier

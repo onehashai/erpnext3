@@ -4276,7 +4276,7 @@ received from,ஏற்கப்பட்டது,
 to,செய்ய,
 Cards,அட்டைகள்,
 Percentage,சதவிதம்,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,நாட்டிற்கான இயல்புநிலைகளை அமைப்பதில் தோல்வி {0}. Support@erpnext.com ஐ தொடர்பு கொள்ளவும்,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,நாட்டிற்கான இயல்புநிலைகளை அமைப்பதில் தோல்வி {0}. support@onehash.ai ஐ தொடர்பு கொள்ளவும்,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,வரிசை # {0}: பொருள் {1 a ஒரு வரிசைப்படுத்தப்பட்ட / தொகுக்கப்பட்ட உருப்படி அல்ல. அதற்கு எதிராக ஒரு சீரியல் எண் / தொகுதி எண் இருக்க முடியாது.,
 Please set {0},அமைக்கவும் {0},
 Please set {0},{0 set ஐ அமைக்கவும்,supplier

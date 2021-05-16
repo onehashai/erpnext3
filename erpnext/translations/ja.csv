@@ -4276,7 +4276,7 @@ received from,受領元,
 to,To,
 Cards,カード,
 Percentage,パーセンテージ,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,国{0}のデフォルトの設定に失敗しました。 support@erpnext.comまでご連絡ください,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,国{0}のデフォルトの設定に失敗しました。 support@onehash.aiまでご連絡ください,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,行＃{0}：アイテム{1}はシリアル化/バッチ処理されたアイテムではありません。それに対してシリアル番号/バッチ番号を持つことはできません。,
 Please set {0},{0}を設定してください,
 Please set {0},{0}を設定してください,supplier

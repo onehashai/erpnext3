@@ -4276,7 +4276,7 @@ received from,Dan alındı,
 to,Şu kişiye,
 Cards,Kartlar,
 Percentage,Yüzde,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,{0} ülkesi için varsayılanlar ayarlanamadı. Lütfen support@erpnext.com ile iletişime geçin,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,{0} ülkesi için varsayılanlar ayarlanamadı. Lütfen support@onehash.ai ile iletişime geçin,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Satır # {0}: {1} öğesi bir Seri / Toplu İş Öğesi değil. Seri No / Parti No&#39;ya karşı olamaz.,
 Please set {0},Lütfen {0} ayarlayınız,
 Please set {0},Lütfen {0} ayarlayın,supplier

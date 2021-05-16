@@ -4276,7 +4276,7 @@ received from,prijaté od,
 to,na,
 Cards,karty,
 Percentage,percento,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,"Nepodarilo sa nastaviť predvolené nastavenia pre krajinu {0}. Prosím, kontaktujte support@erpnext.com",
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,"Nepodarilo sa nastaviť predvolené nastavenia pre krajinu {0}. Prosím, kontaktujte support@onehash.ai",
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Riadok # {0}: Položka {1} nie je sériová / dávková položka. Proti nemu nemôže mať sériové číslo / číslo šarže.,
 Please set {0},Prosím nastavte {0},
 Please set {0},"Prosím, nastavte {0}",supplier

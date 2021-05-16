@@ -4276,7 +4276,7 @@ received from,수신,
 to,에,
 Cards,카드,
 Percentage,백분율,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,국가 {0}의 기본값을 설정하지 못했습니다. support@erpnext.com에 문의하십시오,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,국가 {0}의 기본값을 설정하지 못했습니다. support@onehash.ai에 문의하십시오,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,행 # {0} : 항목 {1}이 (가) 직렬화 / 일괄 처리 된 항목이 아닙니다. 시리얼 No / Batch No는 가질 수 없습니다.,
 Please set {0},설정하십시오 {0},
 Please set {0},{0}을 (를) 설정하십시오,supplier

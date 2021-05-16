@@ -952,7 +952,7 @@ DocType: Website Item Group,Website Item Group,Grupo de Artículos del Sitio Web
 DocType: Item,Supply Raw Materials for Purchase,Materiales Suministro primas para la Compra
 apps/erpnext/erpnext/setup/doctype/naming_series/naming_series.py +163,Series Updated Successfully,Serie actualizado correctamente
 DocType: Opportunity,Opportunity Date,Oportunidad Fecha
-apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@erpnext.com if the problem persists.,"Ha ocurrido un error . Una razón probable podría ser que usted no ha guardado el formulario. Por favor, póngase en contacto con support@erpnext.com si el problema persiste."
+apps/erpnext/erpnext/setup/doctype/email_digest/email_digest.js +7,There was an error. One probable reason could be that you haven't saved the form. Please contact support@onehash.ai if the problem persists.,"Ha ocurrido un error . Una razón probable podría ser que usted no ha guardado el formulario. Por favor, póngase en contacto con support@onehash.ai si el problema persiste."
 apps/erpnext/erpnext/accounts/doctype/pricing_rule/pricing_rule.py +75,Max discount allowed for item: {0} is {1}%,Descuento máximo permitido para cada elemento: {0} es {1}%
 ,POS,POS
 apps/erpnext/erpnext/hr/doctype/payroll_period/payroll_period.py +19,End Date can not be less than Start Date,Fecha Final no puede ser inferior a Fecha de Inicio

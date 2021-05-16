@@ -4276,7 +4276,7 @@ received from,diterima dari,
 to,untuk,
 Cards,Kartu-kartu,
 Percentage,Persentase,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Gagal mengatur default untuk negara {0}. Silakan hubungi support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Gagal mengatur default untuk negara {0}. Silakan hubungi support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Baris # {0}: Item {1} bukan Item Serialized / Batched. Itu tidak dapat memiliki Serial No / Batch No terhadapnya.,
 Please set {0},Silakan set {0},
 Please set {0},Silakan atur {0},supplier

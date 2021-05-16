@@ -4276,7 +4276,7 @@ received from,Primio od,
 to,на,
 Cards,Картице,
 Percentage,Проценат,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Није успјело подешавање заданих поставки за земљу {0}. Молимо контактирајте суппорт@ерпнект.цом,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Није успјело подешавање заданих поставки за земљу {0}. Молимо контактирајте суппорт@ерпнект.цом,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Ред # {0}: Ставка {1} није серијски / скупа ставка. Не може имати серијски број / бр. Серију против.,
 Please set {0},"Пожалуйста, установите {0}",
 Please set {0},Молимо поставите {0},supplier

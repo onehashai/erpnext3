@@ -4276,7 +4276,7 @@ received from,Gekregen van,
 to,naar,
 Cards,Kaarten,
 Percentage,Percentage,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Kan de standaardinstellingen voor land {0} niet instellen. Neem contact op met support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Kan de standaardinstellingen voor land {0} niet instellen. Neem contact op met support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Rij # {0}: artikel {1} is geen geserialiseerd / batch artikel. Het kan geen serienummer / batchnummer hebben.,
 Please set {0},Stel {0} in,
 Please set {0},Stel {0} in,supplier

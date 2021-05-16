@@ -4276,7 +4276,7 @@ received from,પ્રતિ પ્રાપ્ત,
 to,માટે,
 Cards,કાર્ડ્સ,
 Percentage,ટકાવારી,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,દેશ {0 for માટે ડિફોલ્ટ સેટ કરવામાં નિષ્ફળ. કૃપા કરીને સપોર્ટ@erpnext.com પર સંપર્ક કરો,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,દેશ {0 for માટે ડિફોલ્ટ સેટ કરવામાં નિષ્ફળ. કૃપા કરીને સપોર્ટ@erpnext.com પર સંપર્ક કરો,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,પંક્તિ # {0}: આઇટમ {1 a એ સીરીયલાઈઝ / બાસ્ડેડ આઇટમ નથી. તેની સામે સીરીયલ નંબર / બેચ નંબર હોઈ શકતી નથી.,
 Please set {0},સેટ કરો {0},
 Please set {0},કૃપા કરી {0 set સેટ કરો,supplier

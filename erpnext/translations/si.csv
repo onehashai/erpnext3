@@ -4276,7 +4276,7 @@ received from,ලැබුනේ,
 to,වෙත,
 Cards,කාඩ්පත්,
 Percentage,ප්‍රතිශතය,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,රට {0 for සඳහා පෙරනිමි සැකසීමට අසමත් විය. කරුණාකර support@erpnext.com හා සම්බන්ධ වන්න,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,රට {0 for සඳහා පෙරනිමි සැකසීමට අසමත් විය. කරුණාකර support@onehash.ai හා සම්බන්ධ වන්න,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,පේළිය # {0}: අයිතමය {1 Ser අනුක්‍රමික / බැච් කළ අයිතමයක් නොවේ. එයට එරෙහිව අනුක්‍රමික අංක / කණ්ඩායම් අංකයක් තිබිය නොහැක.,
 Please set {0},කරුණාකර {0} සකස්,
 Please set {0},කරුණාකර {0 set සකසන්න,supplier

@@ -4276,7 +4276,7 @@ received from,ໄດ້ຮັບຈາກ,
 to,To,
 Cards,ບັດ,
 Percentage,ອັດຕາສ່ວນ,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,ລົ້ມເຫລວໃນການຕັ້ງຄ່າເລີ່ມຕົ້ນ ສຳ ລັບປະເທດ {0}. ກະລຸນາຕິດຕໍ່ support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,ລົ້ມເຫລວໃນການຕັ້ງຄ່າເລີ່ມຕົ້ນ ສຳ ລັບປະເທດ {0}. ກະລຸນາຕິດຕໍ່ support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,ແຖວ # {0}: ສິນຄ້າ {1} ບໍ່ແມ່ນສິນຄ້າ Serialized / Batched Item. ມັນບໍ່ສາມາດມີ Serial No / Batch No ຕໍ່ມັນໄດ້.,
 Please set {0},ກະລຸນາຕັ້ງ {0},
 Please set {0},ກະລຸນາຕັ້ງຄ່າ {0},supplier

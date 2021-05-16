@@ -4276,7 +4276,7 @@ received from,fékk frá,
 to,Til,
 Cards,Spil,
 Percentage,Hlutfall,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Ekki tókst að setja upp vanskil fyrir land {0}. Vinsamlegast hafðu samband við support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Ekki tókst að setja upp vanskil fyrir land {0}. Vinsamlegast hafðu samband við support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Röð # {0}: Liður {1} er ekki hlutur sem er raðskiptur / hópur. Það getur ekki haft raðnúmer / lotu nei á móti.,
 Please set {0},Vinsamlegast settu {0},
 Please set {0},Vinsamlegast stillið {0},supplier

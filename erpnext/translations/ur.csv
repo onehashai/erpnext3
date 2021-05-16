@@ -4276,7 +4276,7 @@ received from,کی طرف سے موصول,
 to,کرنے کے لئے,
 Cards,کارڈز,
 Percentage,پرسنٹیج,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,ملک {0} کیلئے ڈیفالٹ سیٹ اپ کرنے میں ناکام۔ براہ کرم support@erpnext.com سے رابطہ کریں,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,ملک {0} کیلئے ڈیفالٹ سیٹ اپ کرنے میں ناکام۔ براہ کرم support@onehash.ai سے رابطہ کریں,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,قطار # {0}: آئٹم {1 a سیریلائزڈ / بیچڈ آئٹم نہیں ہے۔ اس کے خلاف سیریل نمبر / بیچ نمبر نہیں ہوسکتا ہے۔,
 Please set {0},مقرر کریں {0},
 Please set {0},براہ کرم {0 set مقرر کریں,supplier

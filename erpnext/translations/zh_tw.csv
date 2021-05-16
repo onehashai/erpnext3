@@ -4001,7 +4001,7 @@ Write off,註銷項款,
 hours,小時,
 received from,從......收到,
 to,至,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,無法設置國家/地區{0}的默認設置。請聯繫support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,無法設置國家/地區{0}的默認設置。請聯繫support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,行＃{0}：項目{1}不是序列化/批量項目。它不能有序列號/批號。,
 Please set {0},請設置{0},
 Please set {0},請設置{0},supplier

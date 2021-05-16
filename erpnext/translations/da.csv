@@ -4276,7 +4276,7 @@ received from,Modtaget fra,
 to,til,
 Cards,Kort,
 Percentage,Procent,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,Kunne ikke konfigurere standardindstillinger for land {0}. Kontakt support@erpnext.com,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,Kunne ikke konfigurere standardindstillinger for land {0}. Kontakt support@onehash.ai,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,Række nr. {0}: Element {1} er ikke en serialiseret / batchet vare. Det kan ikke have et serienummer / batchnummer imod det.,
 Please set {0},Indstil {0},
 Please set {0},Angiv {0},supplier

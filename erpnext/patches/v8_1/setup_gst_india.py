@@ -41,7 +41,7 @@ Templates and update your Customer's and Supplier's GST Numbers.</p>
 
 <p>Please refer {gst_document_link} to know more about how to setup and implement GST in OneHash.</p>
 
-<p>Please contact us at support@erpnext.com, if you have any questions.</p>
+<p>Please contact us at support@onehash.ai, if you have any questions.</p>
 
 <p>Thanks,</p>
 OneHash Team.

@@ -4276,7 +4276,7 @@ received from,የተቀበለው ከ,
 to,ወደ,
 Cards,ካርዶች,
 Percentage,በመቶ,
-Failed to setup defaults for country {0}. Please contact support@erpnext.com,ለአገር ነባሪዎችን ማዋቀር አልተሳካም {0}። እባክዎ support@erpnext.com ን ያነጋግሩ,
+Failed to setup defaults for country {0}. Please contact support@onehash.ai,ለአገር ነባሪዎችን ማዋቀር አልተሳካም {0}። እባክዎ support@onehash.ai ን ያነጋግሩ,
 Row #{0}: Item {1} is not a Serialized/Batched Item. It cannot have a Serial No/Batch No against it.,ረድፍ # {0}: ንጥል {1} የተሰጣጠረ / የታሸገ ንጥል ነገር አይደለም። በእሱ ላይ መለያ ቁጥር / ባች የለም ሊኖረው አይችልም።,
 Please set {0},ማዘጋጀት እባክዎ {0},
 Please set {0},ማዘጋጀት እባክዎ {0},supplier
