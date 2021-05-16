@@ -11,7 +11,7 @@ frappe.tour['Selling Settings'] = [
 	{
 		fieldname: "cust_master_name",
 		title: "Customer Naming By",
-		description: __("By default, the Customer Name is set as per the Full Name entered. If you want Customers to be named by a ") + "<a href='https://help.onehash.ai/en/article/setting-up-naming-series-for-documents-1s41ga1' target='_blank'>Naming Series</a>" + __(" choose the 'Naming Series' option."),
+		description: __("By default, the Customer Name is set as per the Full Name entered. If you want Customers to be named by a ") + "<a href='https://help.onehash.ai/en/article/setting-up-naming-series-for-documents-1s41ga1/' target='_blank'>Naming Series</a>" + __(" choose the 'Naming Series' option."),
 	},
 	{
 		fieldname: "selling_price_list",

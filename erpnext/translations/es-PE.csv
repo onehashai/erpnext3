@@ -57,7 +57,7 @@ apps/erpnext/erpnext/selling/report/customer_acquisition_and_loyalty/customer_ac
 apps/erpnext/erpnext/accounts/doctype/cost_center/cost_center_tree.js +22,New Cost Center Name,Nombre de Nuevo Centro de Coste
 DocType: Purchase Taxes and Charges,"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si se selecciona, el importe del impuesto se considerará como ya incluido en el Monto  a Imprimir"
 DocType: Purchase Invoice,Purchase Taxes and Charges,Impuestos de Compra y Cargos
-apps/erpnext/erpnext/portal/doctype/homepage/homepage.py +15,This is an example website auto-generated from ERPNext,Este es un sitio web ejemplo generado por automáticamente por ERPNext
+apps/erpnext/erpnext/portal/doctype/homepage/homepage.py +15,This is an example website auto-generated from OneHash,Este es un sitio web ejemplo generado por automáticamente por OneHash
 DocType: Job Card,WIP Warehouse,WIP Almacén
 DocType: Job Card,Actual Start Date,Fecha de inicio actual
 apps/erpnext/erpnext/accounts/doctype/exchange_rate_revaluation/exchange_rate_revaluation.js +24,Make Journal Entry,Haga Comprobante de Diario

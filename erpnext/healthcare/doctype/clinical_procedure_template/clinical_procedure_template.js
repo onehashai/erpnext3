@@ -179,7 +179,7 @@ frappe.tour['Clinical Procedure Template'] = [
 	{
 		fieldname: 'consume_stock',
 		title: __('Allow Stock Consumption'),
-		description: __('Check this if the Clinical Procedure utilises consumables. Click ') + "<a href='https://help.onehash.ai/en/article/clinical-procedures-template-i4o6dp/' target='_blank'>here</a>" + __(' to know more')
+		description: __('Check this if the Clinical Procedure utilises consumables. Click ') + "<a href='https://help.onehash.ai/en/article/clinical-procedures-template-i4o6dp/#3-22-manage-procedure-consumables' target='_blank'>here</a>" + __(' to know more')
 
 	},
 	{

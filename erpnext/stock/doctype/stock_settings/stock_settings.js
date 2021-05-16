@@ -20,7 +20,7 @@ frappe.tour['Stock Settings'] = [
 	{
 		fieldname: "item_naming_by",
 		title: __("Item Naming By"),
-		description: __("By default, the Item Name is set as per the Item Code entered. If you want Items to be named by a ") + "<a href='https://help.onehash.ai/en/article/setting-up-naming-series-for-documents-1s41ga1' target='_blank'>Naming Series</a>" + __(" choose the 'Naming Series' option."),
+		description: __("By default, the Item Name is set as per the Item Code entered. If you want Items to be named by a ") + "<a href='https://help.onehash.ai/en/article/setting-up-naming-series-for-documents-1s41ga1/' target='_blank'>Naming Series</a>" + __(" choose the 'Naming Series' option."),
 	},
 	{
 		fieldname: "default_warehouse",
@@ -36,7 +36,7 @@ frappe.tour['Stock Settings'] = [
 	{
 		fieldname: "valuation_method",
 		title: __("Valuation Method"),
-		description: __("Choose between FIFO and Moving Average Valuation Methods. Click ") + "<a href='https://help.onehash.ai/en/article/item-valuation-fifo-and-moving-average-hyuzbn' target='_blank'>here</a>" + __(" to know more about them.")
+		description: __("Choose between FIFO and Moving Average Valuation Methods. Click ") + "<a href='https://help.onehash.ai/en/article/inventory-valuation-method-fifo-vs-moving-average-gw90xi/' target='_blank'>here</a>" + __(" to know more about them.")
 	},
 	{
 		fieldname: "show_barcode_field",

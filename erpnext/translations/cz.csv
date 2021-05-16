@@ -2003,8 +2003,8 @@ apps/erpnext/erpnext/hr/doctype/employee/employee.py +113,Contract End Date must
 DocType: Sales Partner,A third party distributor / dealer / commission agent / affiliate / reseller who sells the companies products for a commission.,"Distributor / dealer / jednatel / partner / prodejce, který prodává produkty společnosti za provizi."
 DocType: Customer Group,Has Child Node,Má děti Node
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +299,{0} against Purchase Order {1},{0} proti Nákupní Objednávce {1}
-DocType: SMS Settings,"Enter static url parameters here (Eg. sender=ERPNext, username=ERPNext, password=1234 etc.)","Zadejte statické parametry url zde (Např odesílatel = ERPNext, username = ERPNext, password. = 1234 atd.),"
-apps/erpnext/erpnext/setup/page/setup_wizard/default_website.py +26,This is an example website auto-generated from ERPNext,To je příklad webové stránky automaticky generované z ERPNext
+DocType: SMS Settings,"Enter static url parameters here (Eg. sender=OneHash, username=OneHash, password=1234 etc.)","Zadejte statické parametry url zde (Např odesílatel = OneHash, username = OneHash, password. = 1234 atd.),"
+apps/erpnext/erpnext/setup/page/setup_wizard/default_website.py +26,This is an example website auto-generated from OneHash,To je příklad webové stránky automaticky generované z OneHash
 apps/erpnext/erpnext/accounts/report/accounts_payable/accounts_payable.js +37,Ageing Range 1,Stárnutí Rozsah 1
 apps/erpnext/erpnext/setup/page/setup_wizard/fixtures/operations.py +109,Photochemical machining,Fotochemický obrábění
 DocType: Purchase Taxes and Charges Template,"Standard tax template that can be applied to all Purchase Transactions. This template can contain list of tax heads and also other expense heads like ""Shipping"", ""Insurance"", ""Handling"" etc.
@@ -2546,7 +2546,7 @@ DocType: Sales Order,Recurring Order,Opakující se objednávky
 DocType: Company,Default Income Account,Účet Default příjmů
 apps/erpnext/erpnext/selling/page/sales_analytics/sales_analytics.js +33,Customer Group / Customer,Zákazník Group / Customer
 DocType: Item Group,Check this if you want to show in website,"Zaškrtněte, pokud chcete zobrazit v webové stránky"
-apps/erpnext/erpnext/setup/page/setup_wizard/setup_wizard.js +189,Welcome to ERPNext,Vítejte na ERPNext
+apps/erpnext/erpnext/setup/page/setup_wizard/setup_wizard.js +189,Welcome to OneHash,Vítejte na OneHash
 DocType: Payment Reconciliation Payment,Voucher Detail Number,Voucher Detail Počet
 DocType: Lead,From Customer,Od Zákazníka
 apps/erpnext/erpnext/setup/page/setup_wizard/install_fixtures.py +37,Calls,Volá
@@ -3217,7 +3217,7 @@ apps/erpnext/erpnext/stock/doctype/stock_ledger_entry/stock_ledger_entry.py +75,
 ,Sales Person-wise Transaction Summary,Prodej Person-moudrý Shrnutí transakce
 DocType: System Settings,Time Zone,Časové pásmo
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.py +104,Warehouse {0} does not exist,Sklad {0} neexistuje
-apps/erpnext/erpnext/hub_node/page/hub/register_in_hub.html +2,Register For ERPNext Hub,Registrace pro ERPNext Hub
+apps/erpnext/erpnext/hub_node/page/hub/register_in_hub.html +2,Register For OneHash Hub,Registrace pro OneHash Hub
 DocType: Monthly Distribution,Monthly Distribution Percentages,Měsíční Distribuční Procenta
 apps/erpnext/erpnext/stock/doctype/batch/batch.py +16,The selected item cannot have Batch,Vybraná položka nemůže mít dávku
 DocType: Delivery Note,% of materials delivered against this Delivery Note,% Materiálů doručeno proti tomuto dodacímu listu

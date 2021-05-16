@@ -59,7 +59,7 @@ frappe.tour['Healthcare Settings'] = [
 	{
 		fieldname: 'inpatient_visit_charge_item',
 		title: __('Healthcare Service Items'),
-		description: __('You can create a service item for Inpatient Visit Charge and set it here. Similarly, you can set up other Healthcare Service Items for billing in this section.')
+		description: __('You can create a service item for Inpatient Visit Charge and set it here. Similarly, you can set up other Healthcare Service Items for billing in this section. Click ') + "<a href='https://help.onehash.ai/en/article/healthcare-settings-a95oem/#3-healthcare-service-items' target='_blank'>here</a>" + __(' to know more')
 	},
 	{
 		fieldname: 'income_account',

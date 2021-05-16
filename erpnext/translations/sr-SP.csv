@@ -355,7 +355,7 @@ DocType: POS Item Group,Item Group,Vrste artikala
 apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.py +84,Age (Days),Starost (Dani)
 apps/erpnext/erpnext/accounts/report/trial_balance/trial_balance.py +243,Opening (Dr),Početno stanje (Du)
 apps/erpnext/erpnext/accounts/report/accounts_receivable_summary/accounts_receivable_summary.py +50,Total Outstanding Amt,Preostalo za plaćanje
-apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +23,Go to the Desktop and start using ERPNext,Idite na radnu površinu i krenite sa radom u programu
+apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +23,Go to the Desktop and start using OneHash,Idite na radnu površinu i krenite sa radom u programu
 apps/erpnext/erpnext/accounts/doctype/subscription/subscription.py +71,You can only have Plans with the same billing cycle in a Subscription,Сви Планови у Претплати морају имати исти циклус наплате
 DocType: Sales Person,Name and Employee ID,Ime i ID Zaposlenog
 DocType: Bank Statement Transaction Invoice Item,Invoice,Faktura

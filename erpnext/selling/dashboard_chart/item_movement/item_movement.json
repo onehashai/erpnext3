@@ -1,0 +1,33 @@
+{
+ "chart_name": "Item Movement",
+ "chart_type": "Report",
+ "creation": "2021-03-29 19:10:38.322308",
+ "data_36": "",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "dynamic_filters_json": "{}",
+ "filters_json": "{\"company\":\"Shaba Enterprises\",\"from_date\":\"2021-03-06\",\"to_date\":\"2021-04-06\"}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2021-04-06 13:27:22.868257",
+ "modified_by": "Administrator",
+ "module": "Selling",
+ "name": "Item Movement",
+ "number_of_groups": 0,
+ "owner": "alifiyah.shahid1999@gmail.com",
+ "report_name": "Item-wise Sales History",
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Pie",
+ "use_report_chart": 0,
+ "x_field": "sales_order",
+ "y_axis": [
+  {
+   "color": "#db1818",
+   "y_field": "amount"
+  }
+ ]
+}

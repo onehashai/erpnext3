@@ -176,7 +176,7 @@ class PurchaseReceipt(BuyingController):
 		if flt(self.per_billed) < 100:
 			self.update_billing_status()
 		else:
-			self.status = "Completed"
+			self.db_set("status", "Completed")
 
 
 		# Updating stock ledger should always be called after updating prevdoc status,
@@ -221,6 +221,7 @@ class PurchaseReceipt(BuyingController):
 		self.ignore_linked_doctypes = ('GL Entry', 'Stock Ledger Entry', 'Repost Item Valuation')
 		self.delete_auto_created_batches()
 
+	@frappe.whitelist()
 	def get_current_stock(self):
 		for d in self.get('supplied_items'):
 			if self.supplier_warehouse:
@@ -324,10 +325,12 @@ class PurchaseReceipt(BuyingController):
 						else:
 							loss_account = self.get_company_default("default_expense_account")
 
+						cost_center = d.cost_center or frappe.get_cached_value("Company", self.company, "cost_center")
+
 						gl_entries.append(self.get_gl_dict({
 							"account": loss_account,
 							"against": warehouse_account[d.warehouse]["account"],
-							"cost_center": d.cost_center,
+							"cost_center": cost_center,
 							"remarks": self.get("remarks") or _("Accounting Entry for Stock"),
 							"debit": divisional_loss,
 							"project": d.project

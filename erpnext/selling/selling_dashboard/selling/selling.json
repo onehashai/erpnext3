@@ -29,6 +29,14 @@
   {
    "chart": "Item-wise Annual Sales",
    "width": "Full"
+  },
+  {
+   "chart": "Item Movement",
+   "width": "Full"
+  },
+  {
+   "chart": "testing pie",
+   "width": "Half"
   }
  ],
  "creation": "2020-07-20 20:17:16.688162",
@@ -38,7 +46,7 @@
  "idx": 0,
  "is_default": 0,
  "is_standard": 1,
- "modified": "2020-07-22 15:31:22.299903",
+ "modified": "2021-04-06 10:55:37.136508",
  "modified_by": "Administrator",
  "module": "Selling",
  "name": "Selling",

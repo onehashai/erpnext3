@@ -21,8 +21,10 @@ from erpnext.accounts.general_ledger import get_round_off_account_and_cost_cente
 from erpnext.accounts.doctype.loyalty_program.loyalty_program import \
 	get_loyalty_program_details_with_points, get_loyalty_details, validate_loyalty_points
 from erpnext.accounts.deferred_revenue import validate_service_stop_date
+from erpnext.accounts.doctype.tax_withholding_category.tax_withholding_category import get_party_tax_withholding_details
 from frappe.model.utils import get_fetch_values
 from frappe.contacts.doctype.address.address import get_address_display
+from erpnext.accounts.doctype.tax_withholding_category.tax_withholding_category import get_party_tax_withholding_details
 
 from erpnext.healthcare.utils import manage_invoice_submit_cancel
 
@@ -44,7 +46,6 @@ class SalesInvoice(SellingController):
 			'target_parent_dt': 'Sales Order',
 			'target_parent_field': 'per_billed',
 			'source_field': 'amount',
-			'join_field': 'so_detail',
 			'percent_join_field': 'sales_order',
 			'status_field': 'billing_status',
 			'keyword': 'Billed',
@@ -55,7 +56,7 @@ class SalesInvoice(SellingController):
 		"""Set indicator for portal"""
 		if self.outstanding_amount < 0:
 			self.indicator_title = _("Credit Note Issued")
-			self.indicator_color = "darkgrey"
+			self.indicator_color = "gray"
 		elif self.outstanding_amount > 0 and getdate(self.due_date) >= getdate(nowdate()):
 			self.indicator_color = "orange"
 			self.indicator_title = _("Unpaid")
@@ -64,7 +65,7 @@ class SalesInvoice(SellingController):
 			self.indicator_title = _("Overdue")
 		elif cint(self.is_return) == 1:
 			self.indicator_title = _("Return")
-			self.indicator_color = "darkgrey"
+			self.indicator_color = "gray"
 		else:
 			self.indicator_color = "green"
 			self.indicator_title = _("Paid")
@@ -75,6 +76,8 @@ class SalesInvoice(SellingController):
 
 		if not self.is_pos:
 			self.so_dn_required()
+
+		self.set_tax_withholding()
 
 		self.validate_proj_cust()
 		self.validate_pos_return()
@@ -152,6 +155,32 @@ class SalesInvoice(SellingController):
 			cost_center_company = frappe.get_cached_value("Cost Center", item.cost_center, "company")
 			if cost_center_company != self.company:
 				frappe.throw(_("Row #{0}: Cost Center {1} does not belong to company {2}").format(frappe.bold(item.idx), frappe.bold(item.cost_center), frappe.bold(self.company)))
+
+	def set_tax_withholding(self):
+		tax_withholding_details = get_party_tax_withholding_details(self)
+
+		if not tax_withholding_details:
+			return
+
+		accounts = []
+		tax_withholding_account = tax_withholding_details.get("account_head")
+
+		for d in self.taxes:
+			if d.account_head == tax_withholding_account:
+				d.update(tax_withholding_details)
+			accounts.append(d.account_head)
+
+		if not accounts or tax_withholding_account not in accounts:
+			self.append("taxes", tax_withholding_details)
+
+		to_remove = [d for d in self.taxes
+			if not d.tax_amount and d.charge_type == "Actual" and d.account_head == tax_withholding_account]
+
+		for d in to_remove:
+			self.remove(d)
+
+		# calculate totals again after applying TDS
+		self.calculate_taxes_and_totals()
 
 	def before_save(self):
 		set_account_for_mode_of_payment(self)
@@ -246,7 +275,7 @@ class SalesInvoice(SellingController):
 				pluck="pos_closing_entry"
 			)
 			if pos_closing_entry:
-				msg = _("To cancel a {} you need to cancel the POS Closing Entry {}. ").format(
+				msg = _("To cancel a {} you need to cancel the POS Closing Entry {}.").format(
 					frappe.bold("Consolidated Sales Invoice"),
 					get_link_to_form("POS Closing Entry", pos_closing_entry[0])
 				)
@@ -364,6 +393,7 @@ class SalesInvoice(SellingController):
 		if validate_against_credit_limit:
 			check_credit_limit(self.customer, self.company, bypass_credit_limit_check_at_sales_order)
 
+	@frappe.whitelist()
 	def set_missing_values(self, for_validate=False):
 		pos = self.set_pos_fields(for_validate)
 
@@ -518,12 +548,12 @@ class SalesInvoice(SellingController):
 			frappe.throw(_("Debit To is required"), title=_("Account Missing"))
 
 		if account.report_type != "Balance Sheet":
-			msg = _("Please ensure {} account is a Balance Sheet account. ").format(frappe.bold("Debit To"))
+			msg = _("Please ensure {} account is a Balance Sheet account.").format(frappe.bold("Debit To")) + " "
 			msg += _("You can change the parent account to a Balance Sheet account or select a different account.")
 			frappe.throw(msg, title=_("Invalid Account"))
 
 		if self.customer and account.account_type != "Receivable":
-			msg = _("Please ensure {} account is a Receivable account. ").format(frappe.bold("Debit To"))
+			msg = _("Please ensure {} account is a Receivable account.").format(frappe.bold("Debit To")) + " "
 			msg += _("Change the account type to Receivable or select a different account.")
 			frappe.throw(msg, title=_("Invalid Account"))
 
@@ -703,6 +733,7 @@ class SalesInvoice(SellingController):
 		else:
 			self.calculate_billing_amount_for_timesheet()
 
+	@frappe.whitelist()
 	def add_timesheet_data(self):
 		self.set('timesheets', [])
 		if self.project:
@@ -1033,7 +1064,8 @@ class SalesInvoice(SellingController):
 			)
 
 	def make_gle_for_rounding_adjustment(self, gl_entries):
-		if flt(self.rounding_adjustment, self.precision("rounding_adjustment")) and self.base_rounding_adjustment:
+		if flt(self.rounding_adjustment, self.precision("rounding_adjustment")) and self.base_rounding_adjustment \
+			and not self.is_internal_transfer():
 			round_off_account, round_off_cost_center = \
 				get_round_off_account_and_cost_center(self.company)
 
@@ -1259,6 +1291,7 @@ class SalesInvoice(SellingController):
 				break
 
 	# Healthcare
+	@frappe.whitelist()
 	def set_healthcare_services(self, checked_values):
 		self.set("items", [])
 		from erpnext.stock.get_item_details import get_item_details

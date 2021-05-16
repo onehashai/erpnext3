@@ -375,7 +375,7 @@ DocType: Company,Arrear Component,欠費組件
 DocType: Supplier Scorecard,Criteria Setup,條件設置
 apps/erpnext/erpnext/manufacturing/doctype/production_order/production_order.py +199,For Warehouse is required before Submit,對於倉庫之前，需要提交
 DocType: Codification Table,Medical Code,醫療法
-apps/erpnext/erpnext/config/integrations.py +37,Connect Amazon with ERPNext,將Amazon與ERPNext連接起來
+apps/erpnext/erpnext/config/integrations.py +37,Connect Amazon with OneHash,將Amazon與OneHash連接起來
 apps/erpnext/erpnext/manufacturing/doctype/production_planning_tool/production_planning_tool.py +20,Please enter Company,請輸入公司名稱
 DocType: Delivery Note Item,Against Sales Invoice Item,對銷售發票項目
 DocType: Agriculture Analysis Criteria,Linked Doctype,鏈接的文檔類型
@@ -626,7 +626,7 @@ apps/erpnext/erpnext/accounts/doctype/sales_invoice/sales_invoice.py +1308,Compa
 apps/erpnext/erpnext/accounts/doctype/cost_center/cost_center.js +95,Please enter company name first,請先輸入公司名稱
 DocType: Travel Itinerary,Non-Vegetarian,非素食主義者
 DocType: Purchase Invoice,Supplier Name,供應商名稱
-apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +25,Read the ERPNext Manual,閱讀ERPNext手冊
+apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +25,Read the OneHash Manual,閱讀OneHash手冊
 DocType: HR Settings,Show Leaves Of All Department Members In Calendar,在日曆中顯示所有部門成員的葉子
 DocType: Purchase Invoice,01-Sales Return,01-銷售退貨
 apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice_list.js +15,Temporarily on Hold,暫時擱置
@@ -1159,7 +1159,7 @@ apps/erpnext/erpnext/stock/doctype/stock_entry/stock_entry.py +1121,"Item {0} (S
 						 to fullfill Sales Order {2}.",無法將項目{0}（序列號：{1}）用作reserverd \以完成銷售訂單{2}。
 apps/erpnext/erpnext/accounts/doctype/account/chart_of_accounts/verified/standard_chart_of_accounts.py +116,Office Maintenance Expenses,Office維護費用
 apps/erpnext/erpnext/utilities/user_progress.py +54,Go to ,去
-DocType: Shopify Settings,Update Price from Shopify To ERPNext Price List,將Shopify更新到ERPNext價目表
+DocType: Shopify Settings,Update Price from Shopify To OneHash Price List,將Shopify更新到OneHash價目表
 apps/erpnext/erpnext/config/learn.py +47,Setting up Email Account,設置電子郵件帳戶
 apps/erpnext/erpnext/manufacturing/doctype/production_plan/production_plan.js +21,Please enter Item first,請先輸入品項
 DocType: Asset Repair,Downtime,停機
@@ -1299,7 +1299,7 @@ DocType: Leave Type,Encashment Threshold Days,封存閾值天數
 ,Final Assessment Grades,最終評估等級
 apps/erpnext/erpnext/public/js/setup_wizard.js +110,The name of your company for which you are setting up this system.,您的公司要為其設立這個系統的名稱。
 DocType: HR Settings,Include holidays in Total no. of Working Days,包括節假日的總數。工作日
-apps/erpnext/erpnext/setup/setup_wizard/operations/sample_data.py +107,Setup your Institute in ERPNext,在ERPNext中設置您的研究所
+apps/erpnext/erpnext/setup/setup_wizard/operations/sample_data.py +107,Setup your Institute in OneHash,在OneHash中設置您的研究所
 DocType: Job Applicant,Hold,持有
 apps/erpnext/erpnext/manufacturing/doctype/bom/bom.js +101,Alternate Item,替代項目
 DocType: Project Update,Progress Details,進度細節
@@ -1366,7 +1366,7 @@ DocType: Share Transfer,From Folio No,來自Folio No
 DocType: Purchase Invoice Advance,Purchase Invoice Advance,購買發票提前
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +231,Row {0}: Credit entry can not be linked with a {1},行{0}：信用記錄無法被鏈接的{1}
 apps/erpnext/erpnext/config/accounts.py +214,Define budget for a financial year.,定義預算財政年度。
-DocType: Shopify Tax Account,ERPNext Account,ERPNext帳戶
+DocType: Shopify Tax Account,OneHash Account,OneHash帳戶
 apps/erpnext/erpnext/controllers/accounts_controller.py +58,{0} is blocked so this transaction cannot proceed,{0}被阻止，所以此事務無法繼續
 DocType: Budget,Action if Accumulated Monthly Budget Exceeded on MR,如果累計每月預算超過MR，則採取行動
 DocType: Work Order Operation,Operation completed for how many finished goods?,操作完成多少成品？
@@ -1518,7 +1518,7 @@ apps/erpnext/erpnext/buying/doctype/supplier_scorecard_criteria/supplier_scoreca
 apps/erpnext/erpnext/selling/page/point_of_sale/point_of_sale.js +893,Please select a field to edit from numpad,請選擇要從數字鍵盤編輯的字段
 apps/erpnext/erpnext/stock/doctype/item/item.py +293,Cannot be a fixed asset item as Stock Ledger is created.,不能成為股票分類賬創建的固定資產項目。
 apps/erpnext/erpnext/healthcare/doctype/inpatient_record/inpatient_record.js +7,Admit,承認
-apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +23,Go to the Desktop and start using ERPNext,轉到桌面和開始使用ERPNext
+apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +23,Go to the Desktop and start using OneHash,轉到桌面和開始使用OneHash
 apps/erpnext/erpnext/templates/pages/order.js +31,Pay Remaining,支付剩餘
 DocType: Item,Manufacturer,生產廠家
 DocType: Landed Cost Item,Purchase Receipt Item,採購入庫項目
@@ -1777,7 +1777,7 @@ apps/erpnext/erpnext/buying/doctype/supplier_quotation/supplier_quotation.py +67
 DocType: Purchase Invoice,Rejected Warehouse,拒絕倉庫
 DocType: GL Entry,Against Voucher,對傳票
 DocType: Item Default,Default Buying Cost Center,預設採購成本中心
-apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +6,"To get the best out of ERPNext, we recommend that you take some time and watch these help videos.",為得到最好的 ERPNext 教學，我們建議您花一些時間和觀看這些說明影片。
+apps/erpnext/erpnext/setup/page/welcome_to_erpnext/welcome_to_erpnext.html +6,"To get the best out of OneHash, we recommend that you take some time and watch these help videos.",為得到最好的 OneHash 教學，我們建議您花一些時間和觀看這些說明影片。
 apps/erpnext/erpnext/stock/doctype/material_request/material_request.js +1046,For Default Supplier (optional),對於默認供應商（可選）
 DocType: Supplier Quotation Item,Lead Time in days,交貨天期
 apps/erpnext/erpnext/accounts/report/accounts_payable/accounts_payable.js +83,Accounts Payable Summary,應付帳款摘要
@@ -2380,7 +2380,7 @@ DocType: Upload Attendance,Get Template,獲取模板
 DocType: Additional Salary Component,Additional Salary Component,額外的薪資組件
 DocType: Material Request,Transferred,轉入
 DocType: Vehicle,Doors,門
-apps/erpnext/erpnext/setup/setup_wizard/operations/defaults_setup.py +118,ERPNext Setup Complete!,ERPNext設定完成！
+apps/erpnext/erpnext/setup/setup_wizard/operations/defaults_setup.py +118,OneHash Setup Complete!,OneHash設定完成！
 DocType: Healthcare Settings,Collect Fee for Patient Registration,收取病人登記費
 apps/erpnext/erpnext/stock/doctype/item/item.py +737,Cannot change Attributes after stock transaction. Make a new Item and transfer stock to the new Item,股票交易後不能更改屬性。創建一個新項目並將庫存轉移到新項目
 DocType: Course Assessment Criteria,Weightage,權重
@@ -3304,7 +3304,7 @@ DocType: Sales Partner,A third party distributor / dealer / commission agent / a
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +412,{0} against Purchase Order {1},{0}針對採購訂單{1}
 DocType: Patient,Patient Demographics,患者人口統計學
 DocType: Task,Actual Start Date (via Time Sheet),實際開始日期（通過時間表）
-apps/erpnext/erpnext/portal/doctype/homepage/homepage.py +15,This is an example website auto-generated from ERPNext,這是一個由 ERPNext 自動產生的範例網站
+apps/erpnext/erpnext/portal/doctype/homepage/homepage.py +15,This is an example website auto-generated from OneHash,這是一個由 OneHash 自動產生的範例網站
 apps/erpnext/erpnext/accounts/report/accounts_payable/accounts_payable.js +28,Ageing Range 1,老齡範圍1
 DocType: Shopify Settings,Enable Shopify,啟用Shopify
 apps/erpnext/erpnext/hr/doctype/expense_claim/expense_claim.py +220,Total advance amount cannot be greater than total claimed amount,總預付金額不能超過索賠總額
@@ -3620,7 +3620,7 @@ DocType: Supplier Scorecard Scoring Variable,Parameter Name,參數名稱
 apps/erpnext/erpnext/hr/doctype/leave_application/leave_application.py +46,Only Leave Applications with status 'Approved' and 'Rejected' can be submitted,只留下地位的申請“已批准”和“拒絕”，就可以提交
 apps/erpnext/erpnext/education/doctype/student_group_creation_tool/student_group_creation_tool.py +52,Student Group Name is mandatory in row {0},學生組名稱是強制性的行{0}
 DocType: Homepage,Products to be shown on website homepage,在網站首頁中顯示的產品
-apps/erpnext/erpnext/setup/doctype/customer_group/customer_group.js +13,This is a root customer group and cannot be edited.,ERPNext是一個開源的基於Web的ERP系統，通過網路技術，向私人有限公司提供整合的工具，在一個小的組織管理大多數流程。有關Web註釋，或購買託管，想得到更多資訊，請連結
+apps/erpnext/erpnext/setup/doctype/customer_group/customer_group.js +13,This is a root customer group and cannot be edited.,OneHash是一個開源的基於Web的ERP系統，通過網路技術，向私人有限公司提供整合的工具，在一個小的組織管理大多數流程。有關Web註釋，或購買託管，想得到更多資訊，請連結
 DocType: Budget,Action if Accumulated Monthly Budget Exceeded on PO,採購訂單上累計每月預算超出時的操作
 DocType: Exchange Rate Revaluation,Exchange Rate Revaluation,匯率重估
 DocType: POS Profile,Ignore Pricing Rule,忽略定價規則
@@ -3870,7 +3870,7 @@ DocType: Department,Expense Approver,費用審批
 apps/erpnext/erpnext/accounts/doctype/journal_entry/journal_entry.py +168,Row {0}: Advance against Customer must be credit,行{0}：提前對客戶必須是信用
 DocType: Project,Hourly,每小時
 apps/erpnext/erpnext/accounts/doctype/account/account.js +88,Non-Group to Group,非集團集團
-DocType: Employee,ERPNext User,ERPNext用戶
+DocType: Employee,OneHash User,OneHash用戶
 apps/erpnext/erpnext/education/doctype/student_group_creation_tool/student_group_creation_tool.py +58,Batch is mandatory in row {0},在{0}行中必須使用批處理
 apps/erpnext/erpnext/education/doctype/student_group_creation_tool/student_group_creation_tool.py +58,Batch is mandatory in row {0},在{0}行中必須使用批處理
 DocType: Purchase Receipt Item Supplied,Purchase Receipt Item Supplied,採購入庫項目供應商
@@ -4229,7 +4229,7 @@ apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.py +376,Balan
 DocType: Loyalty Point Entry,Redeem Against,兌換
 apps/erpnext/erpnext/config/accounts.py +130,Banking and Payments,銀行和支付
 apps/erpnext/erpnext/erpnext_integrations/doctype/woocommerce_settings/woocommerce_settings.py +99,Please enter API Consumer Key,請輸入API使用者密鑰
-,Welcome to ERPNext,歡迎來到ERPNext
+,Welcome to OneHash,歡迎來到OneHash
 apps/erpnext/erpnext/config/learn.py +102,Lead to Quotation,主導報價
 apps/erpnext/erpnext/regional/doctype/gst_settings/gst_settings.py +34,Email Reminders will be sent to all parties with email contacts,電子郵件提醒將通過電子郵件聯繫方式發送給各方
 DocType: Project,Twice Daily,每天兩次
@@ -4621,7 +4621,7 @@ DocType: Subscription,Plans,計劃
 DocType: Salary Slip,Salary Structure,薪酬結構
 DocType: Account,Bank,銀行
 apps/erpnext/erpnext/stock/doctype/material_request/material_request.js +886,Issue Material,發行材料
-apps/erpnext/erpnext/config/integrations.py +32,Connect Shopify with ERPNext,將Shopify與ERPNext連接
+apps/erpnext/erpnext/config/integrations.py +32,Connect Shopify with OneHash,將Shopify與OneHash連接
 apps/erpnext/erpnext/selling/doctype/sales_order/sales_order.js +1161,For Warehouse,對於倉庫
 apps/erpnext/erpnext/stock/doctype/delivery_trip/delivery_trip.py +92,Delivery Notes {0} updated,已更新交貨單{0}
 DocType: Employee,Offer Date,到職日期
