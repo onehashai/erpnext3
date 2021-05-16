@@ -48,7 +48,7 @@ frappe.ui.form.on("Membership Settings", {
 			};
 		});
 
-		let docs_url = "https://docs.erpnext.com/docs/user/manual/en/non_profit/membership";
+		let docs_url = "https://help.onehash.ai/en/article/non-profit-member-and-membership-e5gq3h/";
 
 		frm.set_intro(__("You can learn more about memberships in the manual. ") + `<a href='${docs_url}'>${__('OneHash Docs')}</a>`, true);
 

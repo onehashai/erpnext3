@@ -61,9 +61,9 @@ frappe.ui.form.on("Non Profit Settings", {
 			};
 		});
 
-		let docs_url = "https://docs.erpnext.com/docs/user/manual/en/non_profit/membership";
+		let docs_url = "https://help.onehash.ai/en/article/non-profit-member-and-membership-e5gq3h/";
 
-		frm.set_intro(__("You can learn more about memberships in the manual. ") + `<a href='${docs_url}'>${__('ERPNext Docs')}</a>`, true);
+		frm.set_intro(__("You can learn more about memberships in the manual. ") + `<a href='${docs_url}'>${__('OneHash Docs')}</a>`, true);
 		frm.trigger("setup_buttons_for_membership");
 		frm.trigger("setup_buttons_for_donation");
 	},

@@ -214,7 +214,7 @@ def notify_failure(log):
 			Regards, Administrator
 		'''.format(get_link_to_form('Error Log', log.name))
 
-		sendmail_to_system_managers(_('[Important] [ERPNext] Razorpay donation webhook failed, please check.'), content)
+		sendmail_to_system_managers(_('[Important] [OneHash] Razorpay donation webhook failed, please check.'), content)
 	except Exception:
 		pass
 
