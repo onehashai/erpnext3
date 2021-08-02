@@ -323,6 +323,10 @@ class Subscription(Document):
 
 		if doctype == 'Sales Invoice':
 			invoice.customer = self.party
+			## Currency setup
+			customer_currency = frappe.db.get_value("Customer", self.party, 'default_currency')
+			company_currency = frappe.db.get_value("Company",self.company,"default_currency")
+			invoice.currency = customer_currency if customer_currency else company_currency
 		else:
 			invoice.supplier = self.party
 			if frappe.db.get_value('Supplier', self.party, 'tax_withholding_category'):
