@@ -132,15 +132,10 @@ def add_standard_navbar_items():
 			'is_standard': 1
 		},
 		{
-			'item_label': 'User Forum',
-			'item_type': 'Route',
-			'route': 'https://help.onehash.ai',
-			'is_standard': 1
-		},
-		{
 			'item_label': 'Report an Issue',
 			'item_type': 'Route',
-			'route': 'https://help.onehash.ai',
+			'route': '',
+			'Action':"new frappe.views.CommunicationComposer({'recipients':'support@onehash.ai', 'subject':'['+window.location.host+'] '+frappe.session.user})",
 			'is_standard': 1
 		}
 	]
