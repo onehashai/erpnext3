@@ -21,6 +21,7 @@
  "module": "Utilities",
  "name": "addresses",
  "owner": "Administrator",
+ "print_format": "Test item",
  "published": 1,
  "route": "address",
  "route_to_success_link": 0,
