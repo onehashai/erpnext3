@@ -128,11 +128,11 @@ def add_standard_navbar_items():
 		{
 			'item_label': 'Documentation',
 			'item_type': 'Route',
-			'route': 'https://erpnext.com/docs/user/manual',
+			'route': 'https://help.onehash.ai',
 			'is_standard': 1
 		},
 		{
-			'item_label': 'User Forum',
+			'item_label': 'Roadmap',
 			'item_type': 'Route',
 			'route': 'https://roadmap.onehash.ai',
 			'is_standard': 1
@@ -140,7 +140,7 @@ def add_standard_navbar_items():
 		{
 			'item_label': 'Report an Issue',
 			'item_type': 'Action',
-			'route': 'new frappe.views.CommunicationComposer({\'recipients\':\'support@onehash.ai\', \'subject\':\'[\'+window.location.host+\'] \'+frappe.session.user})',
+			'Action': 'new frappe.views.CommunicationComposer({\'recipients\':\'support@onehash.ai\', \'subject\':\'[\'+window.location.host+\'] \'+frappe.session.user})',
 			'is_standard': 1
 		}
 	]
