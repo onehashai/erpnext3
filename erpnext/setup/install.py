@@ -140,7 +140,8 @@ def add_standard_navbar_items():
 		{
 			'item_label': 'Report an Issue',
 			'item_type': 'Action',
-			'Action': 'new frappe.views.CommunicationComposer({\'recipients\':\'support@onehash.ai\', \'subject\':\'[\'+window.location.host+\'] \'+frappe.session.user})',
+			'route':None,
+			'action': 'new frappe.views.CommunicationComposer({\'recipients\':\'support@onehash.ai\', \'subject\':\'[\'+window.location.host+\'] \'+frappe.session.user})',
 			'is_standard': 1
 		}
 	]
