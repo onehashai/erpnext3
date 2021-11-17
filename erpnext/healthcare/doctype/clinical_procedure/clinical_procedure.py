@@ -112,7 +112,7 @@ class ClinicalProcedure(Document):
 		for d in self.get('items'):
 			d.actual_qty = get_stock_qty(d.item_code, self.warehouse)
 			# validate qty
-			if not allow_negative_stock and d.actual_qty < d.qty:
+			if not allow_negative_stock and d.actual_qty < d.transfer_qty:
 				allow_start = False
 				break
 
@@ -127,13 +127,13 @@ class ClinicalProcedure(Document):
 		stock_entry.company = self.company
 		expense_account = get_account(None, 'expense_account', 'Healthcare Settings', self.company)
 		for item in self.items:
-			if item.qty > item.actual_qty:
+			if item.transfer_qty > item.actual_qty:
 				se_child = stock_entry.append('items')
 				se_child.item_code = item.item_code
 				se_child.item_name = item.item_name
 				se_child.uom = item.uom
 				se_child.stock_uom = item.stock_uom
-				se_child.qty = flt(item.qty - item.actual_qty)
+				se_child.qty = flt(item.transfer_qty - item.actual_qty)
 				se_child.t_warehouse = self.warehouse
 				# in stock uom
 				se_child.transfer_qty = flt(item.transfer_qty)
