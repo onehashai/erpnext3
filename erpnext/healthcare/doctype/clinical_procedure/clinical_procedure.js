@@ -59,7 +59,7 @@ frappe.ui.form.on('Clinical Procedure', {
 
 		if (frm.doc.consume_stock) {
 			frm.set_indicator_formatter('item_code',
-				function(doc) { return (doc.qty<=doc.actual_qty) ? 'green' : 'orange' ; });
+				function(doc) { return (doc.transfer_qty<=doc.actual_qty) ? 'green' : 'orange' ; });
 		}
 
 		if (frm.doc.docstatus == 1) {
