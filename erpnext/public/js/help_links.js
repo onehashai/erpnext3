@@ -861,7 +861,7 @@ frappe.help.help_links["Form/Serial No"] = [
 ];
 
 frappe.help.help_links["List/Batch"] = [
-	{ label: "Batch", url: docsUrl + "user/manual/en/stock/batch" },
+	{ label: "Batch", url: docsUrl + "/en/article/creating-batch-in-onehash-1pmme57/" },
 ];
 
 frappe.help.help_links["Form/Batch"] = [
@@ -965,21 +965,21 @@ frappe.help.help_links["Form/Sales Person"] = [
 frappe.help.help_links["List/Feedback Trigger"] = [
  {
  label: "Feedback Trigger",
- url: docsUrl + "user/manual/en/setting-up/feedback/setting-up-feedback",
+ url: docsUrl + "/en/article/setting-up-feedback-9lde8b/",
  },
 ];
 
 frappe.help.help_links["List/Feedback Request"] = [
  {
  label: "Feedback Request",
- url: docsUrl + "user/manual/en/setting-up/feedback/submit-feedback",
+ url: docsUrl + "/en/article/submit-feedback-1y8nl86/",
  },
 ];
 
 frappe.help.help_links["List/Feedback Request"] = [
  {
  label: "Feedback Request",
- url: docsUrl + "user/manual/en/setting-up/feedback/submit-feedback",
+ url: docsUrl + "/en/article/submit-feedback-1y8nl86/",
  },
 ];
 
