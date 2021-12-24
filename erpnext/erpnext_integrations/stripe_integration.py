@@ -1,13 +1,11 @@
-# -*- coding: utf-8 -*-
 # Copyright (c) 2018, Frappe Technologies Pvt. Ltd. and contributors
 # For license information, please see license.txt
 
-from __future__ import unicode_literals
-import frappe, ast
+import frappe
+import stripe
 from frappe import _
 from frappe.utils import cint, flt
 from frappe.integrations.utils import create_request_log
-import stripe
 from stripe.api_resources import balance_transaction
 
 def create_stripe_charge(gateway_controller, data):
@@ -115,42 +113,43 @@ def create_stripe_subscription(gateway_controller, data):
 	except Exception:
 		frappe.log_error(frappe.get_traceback())
 		return{
-			"redirect_to": frappe.redirect_to_message(_('Server Error'), _("It seems that there is an issue with the server's stripe configuration. In case of failure, the amount will get refunded to your account.")),
+			"redirect_to": frappe.redirect_to_message(
+				_('Server Error'),
+				_("It seems that there is an issue with the server's stripe configuration. In case of failure, the amount will get refunded to your account.")
+			),
 			"status": 401
 		}
 
 
 def create_subscription_on_stripe(stripe_settings):
-		items = []
-		if stripe_settings.data.reference_doctype == "Saas Site":
-			# For Stripe Subscription Model
-			items.append({"plan": stripe_settings.data.plan_id, "quantity": stripe_settings.data.quantity})
-			metadata={'site_name': stripe_settings.data.reference_docname}
-		
+	items = []
+	if stripe_settings.data.reference_doctype == "Saas Site":
+		# For Stripe Subscription Model
+		items.append({"plan": stripe_settings.data.plan_id, "quantity": stripe_settings.data.quantity})
+		metadata={'site_name': stripe_settings.data.reference_docname}
+	
+	else:
+		# Core Function
+		for payment_plan in stripe_settings.payment_plans:
+			plan = frappe.db.get_value("Subscription Plan", payment_plan.plan, "payment_plan_id")
+			items.append({"plan": plan, "quantity": payment_plan.qty})
+			metadata={}
+
+	try:
+		customer = stripe.Customer.create(description=stripe_settings.data.payer_name, name=stripe_settings.data.payer_name, email=stripe_settings.data.payer_email, source=stripe_settings.data.stripe_token_id)
+		subscription = stripe.Subscription.create(customer=customer, items=items, metadata=metadata)
+		if subscription.status == "active":
+			stripe_settings.integration_request.db_set('status', 'Completed', update_modified=False)
+			stripe_settings.flags.status_changed_to = "Completed"
+
 		else:
-			# Core Function
-			for payment_plan in stripe_settings.payment_plans:
-				plan = frappe.db.get_value("Subscription Plan", payment_plan.plan, "payment_plan_id")
-				items.append({"plan": plan, "quantity": payment_plan.qty})
-				metadata={}
-
-		try:
-			customer = stripe.Customer.create(description=stripe_settings.data.payer_name, name=stripe_settings.data.payer_name, email=stripe_settings.data.payer_email, source=stripe_settings.data.stripe_token_id)
-			subscription = stripe.Subscription.create(customer=customer, items=items, metadata=metadata)
-
-			if subscription.status == "active":
-				stripe_settings.integration_request.db_set('status', 'Completed', update_modified=False)
-				stripe_settings.flags.status_changed_to = "Completed"
-
-			else:
-				stripe_settings.integration_request.db_set('status', 'Failed', update_modified=False)
-				frappe.log_error('Subscription No: ' + subscription.id, 'Stripe Payment not completed')
-
-		except Exception:
 			stripe_settings.integration_request.db_set('status', 'Failed', update_modified=False)
-			frappe.log_error(frappe.get_traceback())
+			frappe.log_error('Subscription N°: ' + subscription.id, 'Stripe Payment not completed')
+	except Exception:
+		stripe_settings.integration_request.db_set('status', 'Failed', update_modified=False)
+		frappe.log_error(frappe.get_traceback())
 
-		return stripe_settings.finalize_request()
+	return stripe_settings.finalize_request()
 
 
 def stripe_update_subscription(gateway_controller, data):

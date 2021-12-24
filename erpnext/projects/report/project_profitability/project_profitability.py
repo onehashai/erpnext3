@@ -1,9 +1,11 @@
 # Copyright (c) 2013, Frappe Technologies Pvt. Ltd. and contributors
 # For license information, please see license.txt
 
-from __future__ import unicode_literals
+
 import frappe
 from frappe import _
+from frappe.utils import flt
+
 
 def execute(filters=None):
 	columns, data = [], []
@@ -52,8 +54,8 @@ def get_rows(filters):
 
 def calculate_cost_and_profit(data):
 	for row in data:
-		row.fractional_cost = row.base_gross_pay * row.utilization
-		row.profit = row.base_grand_total - row.base_gross_pay * row.utilization
+		row.fractional_cost = flt(row.base_gross_pay) * flt(row.utilization)
+		row.profit = flt(row.base_grand_total) - flt(row.base_gross_pay) * flt(row.utilization)
 	return data
 
 def get_conditions(filters):
