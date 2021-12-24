@@ -540,8 +540,7 @@ frappe.help.help_links["Tree/Account"] = [
     {
         label: "Managing Tree Masters",
         url:
-            docsUrl +
-            "user/manual/en/setting-up/articles/managing-tree-structure-masters", // Not Available
+            docsUrl +"/en/article/manage-tree-structure-masters-nhqbae/", // Not Available
     },
 ];
 
@@ -560,7 +559,7 @@ frappe.help.help_links["Form/Sales Invoice"] = [
     },
     {
         label: "Recurring Sales Invoice",
-        url: docsUrl + "user/manual/en/accounts/recurring-orders-and-invoices", // Not Available
+        url: docsUrl + "/en/article/recurring-orders-and-invoices-fe4lwc", // Not Available
     },
 ];
 
@@ -579,7 +578,7 @@ frappe.help.help_links["List/Sales Invoice"] = [
     },
     {
         label: "Recurring Sales Invoice",
-        url: docsUrl + "user/manual/en/accounts/recurring-orders-and-invoices", // Not Available
+        url: docsUrl + "/en/article/recurring-orders-and-invoices-fe4lwc/", // Not Available
     },
 ];
 
@@ -608,7 +607,7 @@ frappe.help.help_links["List/Purchase Invoice"] = [
     },
     {
         label: "Recurring Purchase Invoice",
-        url: docsUrl + "user/manual/en/accounts/recurring-orders-and-invoices", // Not Available
+        url: docsUrl + "/en/article/recurring-orders-and-invoices-fe4lwc/", // Not Available
     },
 ];
 
@@ -658,6 +657,8 @@ frappe.help.help_links["List/Asset Category"] = [
 frappe.help.help_links["Tree/Cost Center"] = [
  { label: "Budgeting", url: docsUrl + "/en/article/budgeting-sx9hnz/" },
 ];
+
+//Stock
 
 frappe.help.help_links["List/Item"] = [
  { label: "Item", url: docsUrl + "/en/article/item-prerequisites-creation-features-7pwzwt/" },
@@ -789,15 +790,13 @@ frappe.help.help_links["Tree"] = [
  label: "Managing Tree Structure Masters",
  url:
  docsUrl +
- "user/manual/en/setting-up/articles/managing-tree-structure-masters",
+ "/en/article/manage-tree-structure-masters-nhqbae/",
  },
 ];
 
 frappe.help.help_links["List/Budget"] = [
  { label: "Budgeting", url: docsUrl + "/en/article/budgeting-sx9hnz/" },
 ];
-
-//Stock
 
 frappe.help.help_links["List/Material Request"] = [
  {
@@ -861,6 +860,10 @@ frappe.help.help_links["Form/Serial No"] = [
  { label: "Serial No", url: docsUrl + "/en/article/serial-number-creation-6zysei/" },
 ];
 
+frappe.help.help_links["List/Batch"] = [
+	{ label: "Batch", url: docsUrl + "/en/article/creating-batch-in-onehash-1pmme57/" },
+];
+
 frappe.help.help_links["Form/Batch"] = [
  { label: "Batch", url: docsUrl + "/en/article/creating-batch-in-onehash-1pmme57/" },
 ];
@@ -904,14 +907,14 @@ frappe.help.help_links["Form/UOM"] = [
  {
  label: "Fractions in UOM",
  url:
- docsUrl + "user/manual/en/stock/articles/managing-fractions-in-uom",
+ docsUrl + "/en/article/managing-fractions-in-uom-rm8uc/",
  },
 ];
 
 frappe.help.help_links["Form/Stock Reconciliation"] = [
  {
  label: "Opening Stock Entry",
- url: docsUrl + "user/manual/en/stock/opening-stock",
+ url: docsUrl + "/en/article/opening-stock-135sgw8/",
  },
 ];
 
@@ -962,21 +965,21 @@ frappe.help.help_links["Form/Sales Person"] = [
 frappe.help.help_links["List/Feedback Trigger"] = [
  {
  label: "Feedback Trigger",
- url: docsUrl + "user/manual/en/setting-up/feedback/setting-up-feedback",
+ url: docsUrl + "/en/article/setting-up-feedback-9lde8b/",
  },
 ];
 
 frappe.help.help_links["List/Feedback Request"] = [
  {
  label: "Feedback Request",
- url: docsUrl + "user/manual/en/setting-up/feedback/submit-feedback",
+ url: docsUrl + "/en/article/submit-feedback-1y8nl86/",
  },
 ];
 
 frappe.help.help_links["List/Feedback Request"] = [
  {
  label: "Feedback Request",
- url: docsUrl + "user/manual/en/setting-up/feedback/submit-feedback",
+ url: docsUrl + "/en/article/submit-feedback-1y8nl86/",
  },
 ];
 
@@ -991,7 +994,7 @@ frappe.help.help_links["Form/BOM"] = [
  label: "Nested BOM Structure",
  url:
  docsUrl +
- "user/manual/en/manufacturing/articles/nested-bom-structure",
+ "/en/article/managing-multi-level-bom-bill-of-materials-1ito7an/",
  },
 ];
 
@@ -1012,7 +1015,7 @@ frappe.help.help_links["Form/Workstation"] = [
 frappe.help.help_links["Form/Operation"] = [
  {
  label: "Operation",
- url: docsUrl + "user/manual/en/manufacturing/operation",
+ url: docsUrl + "/en/article/creating-operations-1xv3tx3/",
  },
 ];
 
