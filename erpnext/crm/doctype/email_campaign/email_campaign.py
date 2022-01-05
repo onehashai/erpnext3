@@ -90,9 +90,22 @@ def send_mail(entry, email_campaign):
 		recipients = recipient_list,
 		communication_medium = "Email",
 		sent_or_received = "Sent",
-		send_email = True,
+		send_email = False,
 		email_template = email_template.name
 	)
+	is_auto_commit_set = bool(frappe.db.auto_commit_on_many_writes)
+	frappe.db.auto_commit_on_many_writes = not frappe.flags.in_test
+	message = frappe.render_template(email_template.get("response_html"), context) if email_template.use_html else frappe.render_template(email_template.get("response"), context)
+	frappe.sendmail(
+		subject=frappe.render_template(email_template.get("subject"), context),
+		sender=sender,
+		recipients=recipient_list,
+		reference_doctype="Email Campaign",
+		reference_name=email_campaign.name,
+		queue_separately=True,
+		message = message
+	)
+	frappe.db.auto_commit_on_many_writes = is_auto_commit_set
 	return comm
 
 #called from hooks on doc_event Email Unsubscribe
