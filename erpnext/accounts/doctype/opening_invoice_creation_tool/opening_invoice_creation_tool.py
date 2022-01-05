@@ -126,6 +126,7 @@ class OpeningInvoiceCreationTool(Document):
 		party_doc.save(ignore_permissions=True)
 
 	def get_invoice_dict(self, row=None):
+		accounting_dimension = get_accounting_dimensions()
 		def get_item_dict():
 			cost_center = row.get('cost_center') or frappe.get_cached_value('Company', self.company,  "cost_center")
 			if not cost_center:
@@ -135,7 +136,7 @@ class OpeningInvoiceCreationTool(Document):
 			default_uom = frappe.db.get_single_value("Stock Settings", "stock_uom") or _("Nos")
 			rate = flt(row.outstanding_amount) / flt(row.qty)
 
-			return frappe._dict({
+			item =  frappe._dict({
 				"uom": default_uom,
 				"rate": rate or 0.0,
 				"qty": row.qty,
@@ -145,8 +146,14 @@ class OpeningInvoiceCreationTool(Document):
 				income_expense_account_field: row.temporary_opening_account,
 				"cost_center": cost_center
 			})
+			for dimension in accounting_dimension:
+				item.update({
+					dimension: row.get(dimension) or self.get(dimension)
+				})
+			return item
 
 		item = get_item_dict()
+
 
 		invoice = frappe._dict({
 			"items": [item],
@@ -162,7 +169,6 @@ class OpeningInvoiceCreationTool(Document):
 			"update_stock": 0
 		})
 
-		accounting_dimension = get_accounting_dimensions()
 		for dimension in accounting_dimension:
 			invoice.update({
 				dimension: item.get(dimension)
