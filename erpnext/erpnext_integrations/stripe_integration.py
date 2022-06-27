@@ -56,8 +56,22 @@ def create_stripe_refund(gateway_controller,data):
 	try:
 		balance_transaction = stripe.Customer.create_balance_transaction(stripe_settings.data.customer,amount=stripe_settings.data.amount,currency=stripe_settings.data.currency)
 		stripe_settings.data.balance_transaction = balance_transaction.get("id",None)
-		return create_refund_on_stripe(stripe_settings)
-
+		previous_charges = stripe.Charge.list(customer=stripe_settings.data.customer)
+		bal_refund_amount = stripe_settings.data.amount
+		refund =None
+		for ch in previous_charges:
+			refundable_amt=ch.get("amount")-ch.get("amount_refunded",0)
+			if refundable_amt==0:
+				continue
+			stripe_settings.data.charge_id = ch.get("id")
+			if bal_refund_amount<=refundable_amt:
+				stripe_settings.data.amount = bal_refund_amount
+				return create_refund_on_stripe(stripe_settings)
+			else:
+				stripe_settings.data.amount = refundable_amt
+				refund = create_refund_on_stripe(stripe_settings)
+				bal_refund_amount = bal_refund_amount - refundable_amt
+		return refund
 	except Exception:
 		frappe.log_error(frappe.get_traceback())
 
