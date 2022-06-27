@@ -119,3 +119,5 @@ def set_email_campaign_status():
 	for entry in email_campaigns:
 		email_campaign = frappe.get_doc("Email Campaign", entry.name)
 		email_campaign.update_status()
+		frappe.db.set_value("Email Campaign",email_campaign.name,"status",email_campaign.status)
+		frappe.db.commit()
